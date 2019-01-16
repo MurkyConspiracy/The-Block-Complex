@@ -1,0 +1,19 @@
+{
+    "variants":
+    {
+        "opal":
+        {
+            "textures":
+            {
+                "all":"pdmctbc:blocks/ore_overworld_opal"
+            }
+        },
+        "peridot":
+        {
+            "textures":
+            {
+                "all":"pdmctbc:blocks/ore_overworld_peridot"
+            }
+        }
+    }
+}

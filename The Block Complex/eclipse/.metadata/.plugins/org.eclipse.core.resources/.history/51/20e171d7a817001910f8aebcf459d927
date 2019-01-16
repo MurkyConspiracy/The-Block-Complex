@@ -1,0 +1,7 @@
+package MurkyConspiracy.mod.init;
+
+import net.minecraft.block.Block;
+
+public class BlockOres extends Block {
+
+}

@@ -1,0 +1,10 @@
+package MurkyConspiracy.mod.objects.items;
+
+public class FoodBase extends ItemBase
+{
+
+	public FoodBase(String name) {
+		
+	}
+	
+}

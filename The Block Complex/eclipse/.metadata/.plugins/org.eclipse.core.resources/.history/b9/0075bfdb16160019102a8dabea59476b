@@ -1,0 +1,5 @@
+package MurkyConspiracy.mod.proxy;
+
+public class ClientProxy {
+
+}

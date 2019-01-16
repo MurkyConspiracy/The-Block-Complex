@@ -1,0 +1,9 @@
+package MurkyConspiracy.mod.world.gen;
+
+import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraftforge.fml.common.IWorldGenerator;
+
+public class WorldGenCustomOres implements IWorldGenerator
+{
+	private WorldGenerator ore_overworld_opal
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.util.Refernece"/>
+<fullyQualifiedTypeName name="it.unimi.dsi.fastutil.objects.ReferenceSet"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.SidedProxy"/>
+<fullyQualifiedTypeName name="net.minecraftforge.client.model.ModelLoader"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.Main"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.RegistryEvent"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.RegistryEvent.Register"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.Mod.EventBusSubscriber"/>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.init.ItemInit"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.objects.blocks.BlockBase"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.util.IHasModel"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.objects.blocks.item.ItemBlockVariants"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.util.interfaces.IMetaName"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.block.model.ModelResourceLocation"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.util.References"/>
+<fullyQualifiedTypeName name="net.minecraft.util.EnumHand"/>
+<fullyQualifiedTypeName name="net.minecraft.block.state.BlockStateContainer"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.util.handlers.EnumHandler.EnumType"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.objects.blocks.BlockOresEnd"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.tabs.TheBlockComplexTab"/>
+<fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.init.BlockInit"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.objects.blocks.BlockOresOverworld"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.util.handlers.EnumHandler"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.util.handlers.EnumHandler.EnumTypeOverworld"/>
+<fullyQualifiedTypeName name="net.minecraft.block.state.pattern.BlockMatcher"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.util.handlers.EnumHandler.EnumTypeNether"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.objects.blocks.BlockOresNether"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.registry.GameRegistry"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.world.gen.WorldGenCustomOres"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.util.handlers.RegistryHandler"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="net.minecraft.item.crafting.CraftingManager"/>
+<fullyQualifiedTypeName name="MurkyConspiracy.mod.util.handlers.CraftingHandler"/>
+</qualifiedTypeNameHistroy>

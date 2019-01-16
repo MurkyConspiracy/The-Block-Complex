@@ -1,0 +1,21 @@
+//Item Names
+item.decay_food.name=Decayed Food
+
+//Overworld Ore Names
+tile.ore_overworld_opal.name=Opal Ore
+tile.ore_overworld_peridot.name=Peridot Ore
+tile.ore_overworld_apatite.name=Apatite Ore
+
+//Nether Ore Names
+tile.ore_nether_agate.name=Nether Agate Ore
+tile.ore_nether_peridot.name=Nether Peridot Ore
+tile.ore_nether_flourite.name=Nether Flourite Ore
+
+//End Ore Names
+tile.ore_end_zircon.name=End Zircon Ore
+
+//Block Names
+tile.block_decay.name=Decayed Block
+
+//Item Groups
+itemGroup.theblockcomplextab=The Block Complex

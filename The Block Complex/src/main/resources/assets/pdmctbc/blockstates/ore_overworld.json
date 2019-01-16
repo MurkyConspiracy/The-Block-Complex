@@ -1,0 +1,8 @@
+{
+    "variants":
+    {
+        "variant=opal": {"model": "pdmctbc:ore_overworld_opal"},
+        "variant=peridot": {"model": "pdmctbc:ore_overworld_peridot"},
+        "variant=apatite": {"model": "pdmctbc:ore_overworld_apatite"}
+    }
+}

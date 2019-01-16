@@ -1,0 +1,28 @@
+package MurkyConspiracy.mod.util.handlers;
+
+import java.util.Iterator;
+
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.CraftingManager;
+import net.minecraft.item.crafting.IRecipe;
+
+public class RecipeHandler
+{
+	
+	public static void RemoveRecipes()
+	{
+		
+		List<IRecipe> recipes = CraftingManager.getInstance().getRecipeList();
+
+		Iterator<IRecipe> Leash = recipes.iterator();
+			          
+		while (Leash.hasNext()) {
+			ItemStack is = Leash.next().getRecipeOutput();
+			if (is != null && is.getItem() == Items.BOOK)
+				Leash.remove();
+		};
+		
+	}
+	
+}

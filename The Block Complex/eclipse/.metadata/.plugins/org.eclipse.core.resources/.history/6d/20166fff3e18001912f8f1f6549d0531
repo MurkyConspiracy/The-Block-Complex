@@ -1,0 +1,10 @@
+//Item Names
+item.decay_food.name=Decayed Food
+
+//Ore Names
+tile.ore_overworld_opal.name=Opal Ore
+tile.ore_overworld_peridot.name=Peridot Ore
+tile.ore_overworld_apatite.name=Apatite Ore
+
+//Block Names
+tile.block_decay_natural.name=Decayed Block

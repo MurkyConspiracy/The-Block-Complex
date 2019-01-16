@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "D"
+    ],
+    
+    "key":
+    {
+        "D":
+        {
+            "item":"minecraft:apple"
+        }
+    },
+    
+    "result":
+    {
+        "item":"pdmctbc:decay_food",
+        "count":"1"
+    }
+}

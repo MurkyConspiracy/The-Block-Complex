@@ -1,0 +1,12 @@
+package MurkyConspiracy.mod;
+
+import MurkyConspiracy.mod.util.References;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+
+@Mod(modid = References.MODID, name = References.NAME, version = References.VERSION)
+public class Main 
+{
+	@Instance
+	public static Main Instance;
+}

@@ -1,0 +1,28 @@
+package MurkyConspiracy.mod.world.gen;
+
+import MurkyConspiracy.mod.init.BlockInit;
+import MurkyConspiracy.mod.objects.blocks.BlockOresNether;
+import MurkyConspiracy.mod.objects.blocks.BlockOresOverworld;
+import MurkyConspiracy.mod.util.handlers.EnumHandler;
+import net.minecraft.block.state.pattern.BlockMatcher;
+import net.minecraft.init.Blocks;
+import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraftforge.fml.common.IWorldGenerator;
+
+public class WorldGenCustomOres implements IWorldGenerator
+{
+	private WorldGenerator ore_overworld_opal, ore_overworld_peridot, ore_overworld_apatite, 
+	ore_nether_agate, ore_nether_peridot, ore_nether_flourite, ore_end_zircon;
+
+	public WorldGenCustomOres()
+	{
+		ore_overworld_opal = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOresOverworld.VARIANT, EnumHandler.EnumTypeOverworld.OPAL), 3, BlockMatcher.forBlock(Blocks.COAL_ORE));
+		ore_overworld_peridot = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOresOverworld.VARIANT, EnumHandler.EnumTypeOverworld.PERIDOT), 3, BlockMatcher.forBlock(Blocks.STONE));
+		ore_overworld_apatite = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOresOverworld.VARIANT, EnumHandler.EnumTypeOverworld.APATITE), 3, BlockMatcher.forBlock(Blocks.STONE));
+		
+		ore_nether_agate = new WorldGenMinable(BlockInit.ORE_NETHER.getDefaultState().withProperty(BlockOresNether.VARIANT, EnumHandler.EnumTypeNether.AGATE), 3, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		ore_nether_peridot = new WorldGenMinable(BlockInit.ORE_NETHER.getDefaultState().withProperty(BlockOresNether.VARIANT, EnumHandler.EnumTypeNether.PERIDOT), 3, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		ore_nether_flourite = new WorldGenMinable(BlockInit.ORE_NETHER.getDefaultState().withProperty(BlockOresNether.VARIANT, EnumHandler.EnumTypeNether.FLOURITE ), 3, BlockMatcher.forBlock(Blocks.QUARTZ_ORE));
+	}
+}

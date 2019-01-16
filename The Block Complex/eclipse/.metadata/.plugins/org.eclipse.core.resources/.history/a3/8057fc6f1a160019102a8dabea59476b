@@ -1,0 +1,5 @@
+package MurkyConspiracy.mod.util;
+
+public interface IHasModel {
+
+}

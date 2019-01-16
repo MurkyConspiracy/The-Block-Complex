@@ -1,0 +1,10 @@
+package MurkyConspiracy.mod;
+
+import MurkyConspiracy.mod.util.Referneces;
+import net.minecraftforge.fml.common.Mod;
+
+@Mod(modid = Refence.MODID, name = Reference.NAME, version = Refence.VERSION)
+public class Main 
+{
+
+}

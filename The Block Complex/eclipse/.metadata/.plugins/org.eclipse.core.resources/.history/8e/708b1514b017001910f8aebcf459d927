@@ -1,0 +1,21 @@
+package MurkyConspiracy.mod.init;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import MurkyConspiracy.mod.objects.blocks.BlockBase;
+import MurkyConspiracy.mod.objects.blocks.BlockOres;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class BlockInit 
+{
+	public static final List<Block> BLOCKS = new ArrayList<Block>();
+	
+	public static final Block BLOCK_DECAY_NATURAL = new BlockBase("block_decay", Material.PLANTS, CreativeTabs.DECORATIONS);
+	
+	public static final Block ORE_END = new BlockOres("ore_end", Material.ROCK, "end", CreativeTabs.BUILDING_BLOCKS);
+	public static final Block ORE_NETHER = new BlockOres("ore_end", Material.ROCK, "nether", CreativeTabs.BUILDING_BLOCKS);
+	public static final Block ORE_OVERWORLD = new BlockOres("ore_end", Material.ROCK, "overworld", CreativeTabs.BUILDING_BLOCKS);
+}

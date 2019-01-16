@@ -1,0 +1,6 @@
+{
+    "variants":
+    {
+        "variant=zircon": {"model": "pdmctbc:ore_end_zircon"}
+    }
+}

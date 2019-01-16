@@ -1,0 +1,16 @@
+[
+{
+  "modid": "pdmctbc",
+  "name": "The Block Complex",
+  "description": "Making blocks... complex",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MurkyConspiracy"],
+  "credits": "Project Disruption crew",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,14 @@
+package MurkyConspiracy.mod.util.handlers;
+
+import net.minecraft.item.Item;
+import net.minecraftforge.event.RegistryEvent;
+
+#EventBusSubscriber
+public class RegistryHandler 
+{
+	public static void onItemRegister(RegistryEvent.Register<Item> event)
+	{
+		
+		
+	}
+}

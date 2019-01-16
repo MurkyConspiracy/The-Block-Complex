@@ -1,0 +1,8 @@
+package MurkyConspiracy.mod.world.gen;
+
+import net.minecraftforge.fml.common.IWorldGenerator;
+
+public class WorlGenCustomOres implements IWorldGenerator
+{
+
+}

@@ -1,0 +1,22 @@
+package MurkyConspiracy.mod.tabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
+
+public class TheBlockComplexTab extends CreativeTabs
+{
+
+	public TheBlockComplexTab(String label)
+	{
+		super("theblockcomplextab");
+		this.setBackgroundImageName("tbc.png");
+	}
+
+	@Override
+	public ItemStack getTabIconItem()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

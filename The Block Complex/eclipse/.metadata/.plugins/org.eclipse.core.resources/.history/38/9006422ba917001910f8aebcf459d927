@@ -1,0 +1,10 @@
+package MurkyConspiracy.mod.init;
+
+import MurkyConspiracy.mod.util.interfaces.IHasModel;
+import MurkyConspiracy.mod.util.interfaces.IMetaName;
+import net.minecraft.block.Block;
+
+public class BlockOres extends Block implements IHasModel, IMetaName 
+{
+	
+}
