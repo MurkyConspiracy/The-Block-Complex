@@ -12,6 +12,7 @@ public class EnumHandler
 		PERIDOT(1, "peridot"),
 		APATITE(2, "apatite");
 		
+		
 		private static final EnumTypeOverworld[] META_LOOKUP = new EnumTypeOverworld[values().length];
 		private final int meta;
 		private final String name, unlocializedName;
@@ -61,6 +62,69 @@ public class EnumHandler
 			
 		}
 		
+	}
+	
+	public static enum EnumTypeOverworldMetals implements IStringSerializable
+	{
+		
+		COPPER(0, "copper"),
+		TIN(1, "tin"),
+		LEAD(2, "lead"),
+		ZINC(3, "zinc"),
+		MERCURY(4, "mercury"),
+		NICKLE(5, "nickle"),
+		PLATINUM(6, "platinum"),
+		TUNGSTEN(7, "tungsten");
+		
+		private static final EnumTypeOverworldMetals [] META_LOOKUP = new EnumTypeOverworldMetals[values().length];
+		private final int meta;
+		private final String name, unlocializedName;
+		
+		private EnumTypeOverworldMetals(int meta, String name)
+		{
+			this(meta, name, name);
+		}
+		
+		private EnumTypeOverworldMetals(int meta, String name, String unlocializedName)
+		{
+			this.meta = meta;
+			this.name = name;
+			this.unlocializedName = unlocializedName;
+		}
+		
+		@Override
+		public String getName() 
+		{
+			return this.name;
+		}
+		
+		public int getMeta()
+		{
+			return this.meta;
+		}
+		
+		public String getUnlocializedName()
+		{
+			return this.unlocializedName;
+		}
+		
+		@Override
+		public String toString()
+		{
+			return this.name;
+		}
+		
+		public static EnumTypeOverworldMetals byMetaData(int meta)
+		{
+			return META_LOOKUP[meta]; 
+		}
+		static
+		{
+			for (EnumTypeOverworldMetals enumtype : values())
+			{
+				META_LOOKUP[enumtype.getMeta()] = enumtype;
+			}
+		}
 	}
 	
 	public static enum EnumTypeNether implements IStringSerializable
