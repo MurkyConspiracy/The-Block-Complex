@@ -17,7 +17,6 @@ public class BlockInit
 	
 	public static final Block BLOCK_DECAY_NATURAL = new BlockBase("block_decay", Material.PLANTS);
 	
-	//Ore Gen
 	public static final Block ORE_END = new BlockOresEnd("ore_end", Material.ROCK);
 	public static final Block ORE_NETHER = new BlockOresNether("ore_nether", Material.ROCK);
 	public static final Block ORE_OVERWORLD = new BlockOresOverworld("ore_overworld", Material.ROCK);
