@@ -1,0 +1,14 @@
+{
+  "minecraft:recipes/building_blocks/dark_oak_planks": {
+    "criteria": {
+      "has_log2": "2019-01-16 16:40:11 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2019-01-16 16:40:11 -0600"
+    },
+    "done": false
+  }
+}
