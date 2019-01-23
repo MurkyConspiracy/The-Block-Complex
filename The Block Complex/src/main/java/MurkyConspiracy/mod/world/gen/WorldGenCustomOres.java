@@ -5,7 +5,7 @@ import java.util.Random;
 import MurkyConspiracy.mod.init.BlockInit;
 import MurkyConspiracy.mod.objects.blocks.BlockOresEnd;
 import MurkyConspiracy.mod.objects.blocks.BlockOresNether;
-import MurkyConspiracy.mod.objects.blocks.BlockOresOverworld;
+import MurkyConspiracy.mod.objects.blocks.BlockOresOverworldMinerals;
 import MurkyConspiracy.mod.objects.blocks.BlockOresOverworldMetals;
 import MurkyConspiracy.mod.util.handlers.EnumHandler;
 import net.minecraft.block.state.pattern.BlockMatcher;
@@ -23,13 +23,13 @@ public class WorldGenCustomOres implements IWorldGenerator
 	private WorldGenerator ore_overworld_opal, ore_overworld_peridot, ore_overworld_apatite;
 	private WorldGenerator metal_overworld_copper, metal_overworld_tin, metal_overworld_lead, metal_overworld_zinc, metal_overworld_mercury, metal_overworld_nickle, metal_overworld_platinum, metal_overworld_tungsten;
 	private WorldGenerator ore_nether_agate, ore_nether_peridot, ore_nether_flourite;
-	private WorldGenerator ore_end_zircon;
+	private WorldGenerator ore_end_zircon, ore_end_iridium, ore_end_blackopal, ore_end_redberyl;
 
 	public WorldGenCustomOres()
 	{
-		ore_overworld_opal = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOresOverworld.VARIANT, EnumHandler.EnumTypeOverworld.OPAL), 3, BlockMatcher.forBlock(Blocks.COAL_ORE));
-		ore_overworld_peridot = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOresOverworld.VARIANT, EnumHandler.EnumTypeOverworld.PERIDOT), 3, BlockMatcher.forBlock(Blocks.STONE));
-		ore_overworld_apatite = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOresOverworld.VARIANT, EnumHandler.EnumTypeOverworld.APATITE), 3, BlockMatcher.forBlock(Blocks.STONE));
+		ore_overworld_opal = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMinerals.VARIANT, EnumHandler.EnumTypeOverworld.OPAL), 3, BlockMatcher.forBlock(Blocks.COAL_ORE));
+		ore_overworld_peridot = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMinerals.VARIANT, EnumHandler.EnumTypeOverworld.PERIDOT), 3, BlockMatcher.forBlock(Blocks.STONE));
+		ore_overworld_apatite = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMinerals.VARIANT, EnumHandler.EnumTypeOverworld.APATITE), 3, BlockMatcher.forBlock(Blocks.STONE));
 		
 		metal_overworld_copper = new WorldGenMinable(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.COPPER), 3, BlockMatcher.forBlock(Blocks.STONE));
 		metal_overworld_tin = new WorldGenMinable(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.TIN), 3, BlockMatcher.forBlock(Blocks.STONE));
@@ -45,6 +45,11 @@ public class WorldGenCustomOres implements IWorldGenerator
 		ore_nether_flourite = new WorldGenMinable(BlockInit.ORE_NETHER.getDefaultState().withProperty(BlockOresNether.VARIANT, EnumHandler.EnumTypeNether.FLOURITE ), 3, BlockMatcher.forBlock(Blocks.QUARTZ_ORE));
 		
 		ore_end_zircon = new WorldGenMinable(BlockInit.ORE_END.getDefaultState().withProperty(BlockOresEnd.VARIANT, EnumHandler.EnumTypeEnd.ZIRCON), 3, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_end_iridium = new WorldGenMinable(BlockInit.ORE_END.getDefaultState().withProperty(BlockOresEnd.VARIANT, EnumHandler.EnumTypeEnd.IRIDIUM), 3, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_end_blackopal = new WorldGenMinable(BlockInit.ORE_END.getDefaultState().withProperty(BlockOresEnd.VARIANT, EnumHandler.EnumTypeEnd.BLACKOPAL), 3, BlockMatcher.forBlock(Blocks.END_STONE));
+		ore_end_redberyl = new WorldGenMinable(BlockInit.ORE_END.getDefaultState().withProperty(BlockOresEnd.VARIANT, EnumHandler.EnumTypeEnd.REDBERYL), 3, BlockMatcher.forBlock(Blocks.END_STONE));
+		
+		
 	}
 	
 	private void runGenerator(WorldGenerator gen, World world, Random rand, int chunkX, int chunkZ, int chance, int minHeight, int maxHeight)
@@ -87,6 +92,9 @@ public class WorldGenCustomOres implements IWorldGenerator
 			break;
 		case 1:
 			runGenerator(ore_end_zircon, world, random, chunkX, chunkZ, 25, 0, 256);
+			runGenerator(ore_end_iridium, world, random, chunkX, chunkZ, 25, 0, 256);
+			runGenerator(ore_end_blackopal, world, random, chunkX, chunkZ, 25, 0, 256);
+			runGenerator(ore_end_redberyl, world, random, chunkX, chunkZ, 25, 0, 256);
 		}
 	}
 }
