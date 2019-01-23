@@ -31,7 +31,7 @@ public class Main
 	
 	//added a RegistryHandler.initRegristries for smelting
 	@EventHandler
-	public static void init(FMLInitializationEvent event) {CraftingHandler.removeRecipies(); RegistryHandler.initRegistries();}
+	public static void init(FMLInitializationEvent event) {CraftingHandler.removeRecipies(); /*RegistryHandler.initRegistries();*/}
 	
 	@EventHandler
 	public static void postInit(FMLPostInitializationEvent event) {}

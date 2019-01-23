@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.google.common.collect.Lists;
 
+import MurkyConspiracy.mod.init.BlockInit;
+import MurkyConspiracy.mod.init.ItemInit;
 import net.minecraft.init.Blocks;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
@@ -47,6 +49,11 @@ public class CraftingHandler implements IRecipe
         }
 		
 	}
+	
+//	public static void registerSmelting()
+//	{
+//		ForgeRegistry.addSmelting(new ItemStack(Block.COPPER, 1, 0), new ItemStack(Item.COPPER_INGOT, 1, 0));
+//	}
 
 	@Override
 	public IRecipe setRegistryName(ResourceLocation name)

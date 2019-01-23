@@ -16,10 +16,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class RegistryHandler 
 {
 	//added this for doing smelting recipies
-	public static void initRegistries()
-	{
-		SmeltingRecipes.init();
-	}
+//	public static void initRegistries()
+//	{
+//		CraftingHandler.registerSmelting();
+//	}
 	
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event)
