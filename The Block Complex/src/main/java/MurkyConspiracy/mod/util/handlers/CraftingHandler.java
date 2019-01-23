@@ -42,6 +42,8 @@ public class CraftingHandler
 		//you were missing an EXP argument
 		//For items we have added, always use ItemInit.ITEMNAME
 		GameRegistry.addSmelting(new ItemStack(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.COPPER).getBlock(), 1), new ItemStack(ItemInit.decay_food), 1.5f);
+		GameRegistry.addSmelting(new ItemStack(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.TIN).getBlock(), 1), new ItemStack(ItemInit.decay_food), 1.5f);
+		GameRegistry.addSmelting(new ItemStack(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.LEAD).getBlock(), 1), new ItemStack(ItemInit.decay_food), 1.5f);
 	}
 
 	private static void registerRecipes() 
