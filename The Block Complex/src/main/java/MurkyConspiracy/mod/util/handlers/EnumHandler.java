@@ -188,7 +188,10 @@ public class EnumHandler
 	public static enum EnumTypeEnd implements IStringSerializable
 	{
 		
-		ZIRCON(0, "zircon");
+		ZIRCON(0, "zircon"),
+		IRIDIUM(1, "iridium"),
+		BLACKOPAL(2, "blackopal"),
+		REDBERYL(3, "redberyl");
 		
 		private static final EnumTypeEnd[] META_LOOKUP = new EnumTypeEnd[values().length];
 		private final int meta;

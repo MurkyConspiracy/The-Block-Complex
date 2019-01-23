@@ -23,6 +23,9 @@ tile.ore_nether_flourite.name=Nether Flourite Ore
 
 //End Ore Names
 tile.ore_end_zircon.name=End Zircon Ore
+tile.ore_end_iridium.name=Iridium Ore
+tile.ore_end_blackopal.name=Black Opal Ore
+tile.ore_end_redberyl.name=Red Beryl Ore
 
 //Block Names
 tile.block_decay.name=Decayed Block

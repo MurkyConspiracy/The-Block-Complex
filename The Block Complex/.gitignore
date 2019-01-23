@@ -1,1 +1,6 @@
-/bin/
+bin/
+
+run/
+.log
+/build/
+/src/
