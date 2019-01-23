@@ -1,6 +1,7 @@
 package MurkyConspiracy.mod.util.handlers;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.google.common.collect.Lists;
 
@@ -17,9 +18,11 @@ import net.minecraftforge.registries.ForgeRegistry;
 public class CraftingHandler implements IRecipe
 {
 	
+	//Temporary: add user friendly block additions through for loop manipulation. Block ArrayList instead of item
+	private static List<Item> rejectRecipes = Lists.newArrayList(Item.getItemFromBlock(Blocks.FURNACE), Item.getItemFromBlock(Blocks.CRAFTING_TABLE), Item.getItemFromBlock(Blocks.ANVIL), Item.getItemFromBlock(Blocks.CAULDRON));
 	public static void registerRecipes(IRecipe recipe) 
 	{
-		ForgeRegistry<IRecipe> recipeRegistry = (ForgeRegistry<IRecipe>)ForgeRegistries.RECIPES;
+		
 		
 	}
 	
@@ -33,7 +36,7 @@ public class CraftingHandler implements IRecipe
         {
         	
         	ItemStack output = r.getRecipeOutput();
-        	if(output.getItem() == Item.getItemFromBlock(Blocks.PLANKS))
+        	if(rejectRecipes.contains(output.getItem()))
         	{
         		
         		recipeRegistry.remove(r.getRegistryName());
@@ -95,3 +98,4 @@ public class CraftingHandler implements IRecipe
 	}
 	
 }
+

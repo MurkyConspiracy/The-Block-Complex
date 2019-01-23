@@ -28,6 +28,7 @@ public class BlockOresOverworldMinerals extends Block implements IHasModel, IMet
 	
 	public static final PropertyEnum<EnumTypeOverworld> VARIANT = PropertyEnum.<EnumHandler.EnumTypeOverworld>create("variant", EnumHandler.EnumTypeOverworld.class);
 	
+	@SuppressWarnings("unused")
 	private String name;
 	
 	public BlockOresOverworldMinerals(String name, Material material)

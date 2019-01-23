@@ -10,7 +10,6 @@ import MurkyConspiracy.mod.objects.blocks.BlockOresOverworldMinerals;
 import MurkyConspiracy.mod.objects.blocks.BlockOresOverworldMetals;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockInit 
 {

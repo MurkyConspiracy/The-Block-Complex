@@ -28,6 +28,7 @@ public class BlockOresNether extends Block implements IHasModel, IMetaName
 	
 	public static final PropertyEnum<EnumTypeNether> VARIANT = PropertyEnum.<EnumHandler.EnumTypeNether>create("variant", EnumHandler.EnumTypeNether.class);
 	
+	@SuppressWarnings("unused")
 	private String name;
 	
 	public BlockOresNether(String name, Material material)
