@@ -1,12 +1,3 @@
-<<<<<<< HEAD
 /bin/
-/run/
 /.settings/
-=======
-bin/
-
-run/
-.log
-/build/
-/src/
->>>>>>> branch 'master' of https://github.com/MurkyConspiracy/The-Block-Complex.git
+/run/
