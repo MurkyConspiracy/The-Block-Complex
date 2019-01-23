@@ -15,6 +15,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @EventBusSubscriber
 public class RegistryHandler 
 {
+	//added this for doing smelting recipies
+	public static void initRegistries()
+	{
+		SmeltingRecipes.init();
+	}
 	
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event)

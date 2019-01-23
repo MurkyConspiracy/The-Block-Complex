@@ -23,14 +23,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
-public class BlockOresOverworld extends Block implements IHasModel, IMetaName 
+public class BlockOresOverworldMinerals extends Block implements IHasModel, IMetaName 
 {
 	
 	public static final PropertyEnum<EnumTypeOverworld> VARIANT = PropertyEnum.<EnumHandler.EnumTypeOverworld>create("variant", EnumHandler.EnumTypeOverworld.class);
 	
 	private String name;
 	
-	public BlockOresOverworld(String name, Material material)
+	public BlockOresOverworldMinerals(String name, Material material)
 	{
 		
 		super(material);
