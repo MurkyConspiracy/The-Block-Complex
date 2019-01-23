@@ -30,7 +30,7 @@ public class Main
 	public static void preInit(FMLPreInitializationEvent event) {RegistryHandler.otherRegistries();}
 	
 	@EventHandler
-	public static void init(FMLInitializationEvent event) {CraftingHandler.removeRecipies();}
+	public static void init(FMLInitializationEvent event) {CraftingHandler.handleRecipes();}
 	
 	@EventHandler
 	public static void postInit(FMLPostInitializationEvent event) {}

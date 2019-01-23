@@ -28,6 +28,8 @@ public class BlockOresEnd extends Block implements IHasModel, IMetaName
 	
 	public static final PropertyEnum<EnumTypeEnd> VARIANT = PropertyEnum.<EnumHandler.EnumTypeEnd>create("variant", EnumHandler.EnumTypeEnd.class);
 	
+
+
 	private String name;
 	
 	public BlockOresEnd(String name, Material material)

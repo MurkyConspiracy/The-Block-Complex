@@ -5,7 +5,6 @@ import MurkyConspiracy.mod.init.BlockInit;
 import MurkyConspiracy.mod.init.ItemInit;
 import MurkyConspiracy.mod.objects.blocks.item.ItemBlockVariants;
 import MurkyConspiracy.mod.util.handlers.EnumHandler;
-import MurkyConspiracy.mod.util.handlers.EnumHandler.EnumTypeOverworld;
 import MurkyConspiracy.mod.util.handlers.EnumHandler.EnumTypeOverworldMetals;
 import MurkyConspiracy.mod.util.interfaces.IHasModel;
 import MurkyConspiracy.mod.util.interfaces.IMetaName;
@@ -29,6 +28,7 @@ public class BlockOresOverworldMetals extends Block implements IHasModel, IMetaN
 	
 	public static final PropertyEnum<EnumTypeOverworldMetals> VARIANT = PropertyEnum.<EnumHandler.EnumTypeOverworldMetals>create("variant", EnumHandler.EnumTypeOverworldMetals.class);
 		
+		@SuppressWarnings("unused")
 		private String name;
 		
 		public BlockOresOverworldMetals(String name, Material material)
