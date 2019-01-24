@@ -14,7 +14,7 @@ public class NuggetBase extends Item implements IHasModel
 	
 	public NuggetBase(String name, Boolean hasIngot)
 	{
-		String nuggetName = "Nugget_" + name;
+		String nuggetName = "nugget_" + name;
 		
 		Item newNugget = new Item();
 		newNugget.setUnlocalizedName(nuggetName);
@@ -25,7 +25,7 @@ public class NuggetBase extends Item implements IHasModel
 		
 		if(hasIngot)
 		{
-			String ingotName = "Ingot_" + name;
+			String ingotName = "ingot_" + name;
 			
 			Item newIngot = new Item();
 			newIngot.setUnlocalizedName(ingotName);
@@ -40,8 +40,8 @@ public class NuggetBase extends Item implements IHasModel
 	public NuggetBase(String name, Boolean hasIngot, Material material)
 	{
 		
-		String nuggetName = "Nugget_" + name;
-		String oreName = "Ore_" + name;
+		String nuggetName = "nugget_" + name;
+		String oreName = "ore_" + name;
 		
 		System.out.println(name);
 		System.out.println(oreName);
@@ -56,7 +56,7 @@ public class NuggetBase extends Item implements IHasModel
 		
 		if(hasIngot)
 		{
-			String ingotName = "Ingot_" + name;
+			String ingotName = "ingot_" + name;
 			
 			Item newIngot = new Item();
 			newIngot.setUnlocalizedName(ingotName);
