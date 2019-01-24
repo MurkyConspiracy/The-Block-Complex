@@ -1,0 +1,10 @@
+{
+    "variants":
+    {
+        "variant=zircon": {"model": "pdmctbc:ore_end_zircon"},
+        "variant=iridium": {"model": "pdmctbc:ore_end_iridium"},
+        "variant=blackopal": {"model": "pdmctbc:ore_end_blackopal"},
+        "variant=redberyl": {"model": "pdmctbc:ore_end_redberyl"}
+        
+    }
+}

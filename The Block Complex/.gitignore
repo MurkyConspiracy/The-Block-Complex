@@ -2,5 +2,4 @@
 /.settings/
 /run/
 bin/
-.bin
-/src/
+.bin/
