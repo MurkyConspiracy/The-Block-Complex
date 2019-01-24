@@ -13,27 +13,35 @@ import net.minecraft.item.ItemBlock;
 public class NuggetBase extends Item implements IHasModel
 {
 	
+	private Item nugget = null;
+	private Item ingot = null;
+	private Block metalBlock = null;
+	private int dummy;
+	
 	public NuggetBase(String name, Boolean hasIngot)
 	{
 		String nuggetName = "nugget_" + name;
+		dummy = 0;
 		
-		Item newNugget = new Item();
-		newNugget.setUnlocalizedName(nuggetName);
-		newNugget.setRegistryName(nuggetName);
-		newNugget.setCreativeTab(Main.theblockcomplextab);
+		nugget = new Item();
+		nugget.setUnlocalizedName(nuggetName);
+		nugget.setRegistryName(nuggetName);
+		nugget.setCreativeTab(Main.theblockcomplextab);
 		
-		ItemInit.ITEMS.add(newNugget);
+		ItemInit.ITEMS.add(nugget);
 		
 		if(hasIngot)
 		{
+			
+			dummy = 1;
 			String ingotName = "ingot_" + name;
 			
-			Item newIngot = new Item();
-			newIngot.setUnlocalizedName(ingotName);
-			newIngot.setRegistryName(ingotName);
-			newIngot.setCreativeTab(Main.theblockcomplextab);
+			ingot = new Item();
+			ingot.setUnlocalizedName(ingotName);
+			ingot.setRegistryName(ingotName);
+			ingot.setCreativeTab(Main.theblockcomplextab);
 			
-			ItemInit.ITEMS.add(newIngot);
+			ItemInit.ITEMS.add(ingot);
 		}
 		
 	}
@@ -43,38 +51,59 @@ public class NuggetBase extends Item implements IHasModel
 		
 		String nuggetName = "nugget_" + name;
 		String blockName = "block_" + name;
+		dummy = 2;
 		
-		Item newNugget = new Item();
-		newNugget.setUnlocalizedName(nuggetName);
-		newNugget.setRegistryName(nuggetName);
-		newNugget.setCreativeTab(Main.theblockcomplextab);
+		nugget = new Item();
+		nugget.setUnlocalizedName(nuggetName);
+		nugget.setRegistryName(nuggetName);
+		nugget.setCreativeTab(Main.theblockcomplextab);
 		
-		ItemInit.ITEMS.add(newNugget);
+		ItemInit.ITEMS.add(nugget);
 		
 		if(hasIngot)
 		{
+			dummy = 3;
 			String ingotName = "ingot_" + name;
 			
-			Item newIngot = new Item();
-			newIngot.setUnlocalizedName(ingotName);
-			newIngot.setRegistryName(ingotName);
-			newIngot.setCreativeTab(Main.theblockcomplextab);
+			Item ingot = new Item();
+			ingot.setUnlocalizedName(ingotName);
+			ingot.setRegistryName(ingotName);
+			ingot.setCreativeTab(Main.theblockcomplextab);
 			
-			ItemInit.ITEMS.add(newIngot);
+			ItemInit.ITEMS.add(ingot);
 		}
 		
-		Block newBlock = new Block(material);
-		newBlock.setUnlocalizedName(blockName);
-		newBlock.setRegistryName(blockName);
-		newBlock.setCreativeTab(Main.theblockcomplextab);
+		metalBlock = new Block(material);
+		metalBlock.setUnlocalizedName(blockName);
+		metalBlock.setRegistryName(blockName);
+		metalBlock.setCreativeTab(Main.theblockcomplextab);
 		
-		BlockInit.BLOCKS.add(newBlock);
-		ItemInit.ITEMS.add(new ItemBlock(newBlock).setRegistryName(newBlock.getRegistryName()));
+		BlockInit.BLOCKS.add(metalBlock);
+		ItemInit.ITEMS.add(new ItemBlock(metalBlock).setRegistryName(metalBlock.getRegistryName()));
 		
 	}
 	
 	@Override
 	public void registerModels() {
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
+		switch(dummy)
+		{
+			case 0:
+				Main.proxy.registerItemRenderer(nugget, 0, "inventory");
+				break;
+			case 1:
+				Main.proxy.registerItemRenderer(nugget, 0, "inventory");
+				Main.proxy.registerItemRenderer(ingot, 0, "inventory");
+				break;
+			case 2:
+				Main.proxy.registerItemRenderer(nugget, 0, "inventory");
+				Main.proxy.registerItemRenderer(Item.getItemFromBlock(metalBlock), 0, "inventory");
+				break;
+			case 3:
+				Main.proxy.registerItemRenderer(nugget, 0, "inventory");
+				Main.proxy.registerItemRenderer(ingot, 0, "inventory");
+				Main.proxy.registerItemRenderer(Item.getItemFromBlock(metalBlock), 0, "inventory");
+				break;
+				
+		}		
 	}
 }
