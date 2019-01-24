@@ -37,7 +37,6 @@ public class CraftingHandler
 	
 	private static void registerSmelting()
 	{
-		//ForgeRegistry.addSmelting(new ItemStack(Block.COPPER, 1, 0), new ItemStack(Item.COPPER_INGOT, 1, 0));
 		//You always have to use a reference through variant for ores
 		//you were missing an EXP argument
 		//For items we have added, always use ItemInit.ITEMNAME

@@ -1,6 +1,15 @@
 //Item Names
 item.decay_food.name=Decayed Food
 
+//Ingot Names
+item.ingot_copper.name=Copper Ingot
+item.ingot_tin.name=Tin Ingot
+item.ingot_lead.name=Lead Ingot
+item.ingot_zinc.name=Zinc Ingot
+item.ingot_nickel.name=Nickel Ingot
+item.ingot_platinum.name=Platinum Ingot
+item.ingot_tungsten.name=Tungsten Ingot
+
 //Overworld Ore Names
 tile.ore_overworld_opal.name=Opal Ore
 tile.ore_overworld_peridot.name=Peridot Ore
