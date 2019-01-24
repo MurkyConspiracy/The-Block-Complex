@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "pdmctbc:blocks/block _copper"
+        "all": "pdmctbc:blocks/block_copper"
     }
 }
