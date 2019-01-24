@@ -14,23 +14,25 @@ public class NuggetBase extends Item implements IHasModel
 	
 	public NuggetBase(String name, Boolean hasIngot)
 	{
-		String nuggetName = name + "_nugget";
+		String nuggetName = "Nugget_" + name;
 		
-		setUnlocalizedName(nuggetName);
-		setRegistryName(nuggetName);
-		setCreativeTab(Main.theblockcomplextab);
+		Item newNugget = new Item();
+		newNugget.setUnlocalizedName(nuggetName);
+		newNugget.setRegistryName(nuggetName);
+		newNugget.setCreativeTab(Main.theblockcomplextab);
 		
-		ItemInit.ITEMS.add(this);
+		ItemInit.ITEMS.add(newNugget);
 		
 		if(hasIngot)
 		{
 			String ingotName = "Ingot_" + name;
 			
-			setUnlocalizedName(ingotName);
-			setRegistryName(ingotName);
-			setCreativeTab(Main.theblockcomplextab);
+			Item newIngot = new Item();
+			newIngot.setUnlocalizedName(ingotName);
+			newIngot.setRegistryName(ingotName);
+			newIngot.setCreativeTab(Main.theblockcomplextab);
 			
-			ItemInit.ITEMS.add(this);
+			ItemInit.ITEMS.add(newIngot);
 		}
 		
 	}
@@ -38,34 +40,39 @@ public class NuggetBase extends Item implements IHasModel
 	public NuggetBase(String name, Boolean hasIngot, Material material)
 	{
 		
-		String nuggetName = name = "_nugget";
-		String oreName = name = "_ore";
+		String nuggetName = "Nugget_" + name;
+		String oreName = "Ore_" + name;
 		
+		System.out.println(name);
+		System.out.println(oreName);
+		System.out.println(nuggetName);
 		
-		setUnlocalizedName(nuggetName);
-		setRegistryName(nuggetName);
-		setCreativeTab(Main.theblockcomplextab);
+		Item newNugget = new Item();
+		newNugget.setUnlocalizedName(nuggetName);
+		newNugget.setRegistryName(nuggetName);
+		newNugget.setCreativeTab(Main.theblockcomplextab);
 		
-		ItemInit.ITEMS.add(this);
+		ItemInit.ITEMS.add(newNugget);
 		
 		if(hasIngot)
 		{
 			String ingotName = "Ingot_" + name;
 			
-			setUnlocalizedName(ingotName);
-			setRegistryName(ingotName);
-			setCreativeTab(Main.theblockcomplextab);
+			Item newIngot = new Item();
+			newIngot.setUnlocalizedName(ingotName);
+			newIngot.setRegistryName(ingotName);
+			newIngot.setCreativeTab(Main.theblockcomplextab);
 			
-			ItemInit.ITEMS.add(this);
+			ItemInit.ITEMS.add(newIngot);
 		}
 		
-		Block temp = new Block(material);
-		temp.setUnlocalizedName(oreName);
-		temp.setRegistryName(oreName);
-		temp.setCreativeTab(Main.theblockcomplextab);
+		Block newBlock = new Block(material);
+		newBlock.setUnlocalizedName(oreName);
+		newBlock.setRegistryName(oreName);
+		newBlock.setCreativeTab(Main.theblockcomplextab);
 		
-		BlockInit.BLOCKS.add(temp);
-		ItemInit.ITEMS.add(new ItemBlock(temp).setRegistryName(this.getRegistryName()));
+		BlockInit.BLOCKS.add(newBlock);
+		ItemInit.ITEMS.add(new ItemBlock(newBlock).setRegistryName(newBlock.getRegistryName()));
 	}
 
 	@Override
