@@ -32,7 +32,6 @@ public class CraftingHandler
 		registerRecipes();
 		registerSmelting();
 		
-		
 	}
 	
 	private static void registerSmelting()
@@ -44,7 +43,6 @@ public class CraftingHandler
 		GameRegistry.addSmelting(new ItemStack(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.COPPER).getBlock(), 1, 0), new ItemStack(ItemInit.decay_food, 3), 1.5f);
 		GameRegistry.addSmelting(new ItemStack(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.TIN).getBlock(), 1, 1), new ItemStack(ItemInit.decay_food, 3), 1.5f);
 		GameRegistry.addSmelting(new ItemStack(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.LEAD).getBlock(), 1, 2), new ItemStack(ItemInit.decay_food, 3), 1.5f);
-
 	}
 
 	private static void registerRecipes() 
