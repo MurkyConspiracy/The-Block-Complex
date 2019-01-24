@@ -9,6 +9,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
+
 public class NuggetBase extends Item implements IHasModel
 {
 	
@@ -73,8 +74,9 @@ public class NuggetBase extends Item implements IHasModel
 		
 		BlockInit.BLOCKS.add(newBlock);
 		ItemInit.ITEMS.add(new ItemBlock(newBlock).setRegistryName(newBlock.getRegistryName()));
+		
 	}
-
+	
 	@Override
 	public void registerModels() {
 		Main.proxy.registerItemRenderer(this, 0, "inventory");
