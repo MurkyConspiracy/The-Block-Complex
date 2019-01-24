@@ -15,7 +15,7 @@ item.ingot_platinum.name=Platinum Ingot
 item.ingot_tungsten.name=Tungsten Ingot
 
 //Block Names
-tile.block_copper.name=Copper Ore
+tile.block_copper.name=Copper Block
 
 //Overworld Ore Names
 tile.ore_overworld_opal.name=Opal Ore
