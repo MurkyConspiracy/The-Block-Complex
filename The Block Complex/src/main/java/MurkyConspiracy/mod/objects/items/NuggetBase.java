@@ -4,6 +4,7 @@ import MurkyConspiracy.mod.Main;
 import MurkyConspiracy.mod.init.BlockInit;
 import MurkyConspiracy.mod.init.ItemInit;
 import MurkyConspiracy.mod.util.interfaces.IHasModel;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -36,8 +37,10 @@ public class NuggetBase extends Item implements IHasModel
 	
 	public NuggetBase(String name, Boolean hasIngot, Material material)
 	{
+		
 		String nuggetName = name = "_nugget";
 		String oreName = name = "_ore";
+		
 		
 		setUnlocalizedName(nuggetName);
 		setRegistryName(nuggetName);
@@ -56,7 +59,6 @@ public class NuggetBase extends Item implements IHasModel
 			ItemInit.ITEMS.add(this);
 		}
 		
-		super(material);
 		setUnlocalizedName(oreName);
 		setRegistryName(oreName);
 		setCreativeTab(Main.theblockcomplextab);
