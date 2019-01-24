@@ -59,12 +59,13 @@ public class NuggetBase extends Item implements IHasModel
 			ItemInit.ITEMS.add(this);
 		}
 		
-		setUnlocalizedName(oreName);
-		setRegistryName(oreName);
-		setCreativeTab(Main.theblockcomplextab);
+		Block temp = new Block(material);
+		temp.setUnlocalizedName(oreName);
+		temp.setRegistryName(oreName);
+		temp.setCreativeTab(Main.theblockcomplextab);
 		
-		BlockInit.BLOCKS.add(this);
-		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		BlockInit.BLOCKS.add(temp);
+		ItemInit.ITEMS.add(new ItemBlock(temp).setRegistryName(this.getRegistryName()));
 	}
 
 	@Override
