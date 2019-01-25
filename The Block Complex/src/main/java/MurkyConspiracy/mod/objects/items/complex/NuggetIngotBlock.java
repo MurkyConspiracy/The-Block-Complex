@@ -3,11 +3,13 @@ package MurkyConspiracy.mod.objects.items.complex;
 import MurkyConspiracy.mod.Main;
 import MurkyConspiracy.mod.init.ItemInit;
 import MurkyConspiracy.mod.util.interfaces.IHasModel;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
+import net.minecraftforge.client.model.ModelLoader;
 
 public class NuggetIngotBlock extends Item implements IHasModel
 {
@@ -49,7 +51,7 @@ public class NuggetIngotBlock extends Item implements IHasModel
 	{
 		for(int i = 0; i < 2; ++i)
 		{
-			Main.proxy.registerItemRenderer(this, i, "inventory");
+			ModelLoader.setCustomModelResourceLocation(this, i, new ModelResourceLocation(this.getRegistryName() + "_" + NIB.byNIBMeta(i).getName(), "inventory"));
 		}
 	}
 	
