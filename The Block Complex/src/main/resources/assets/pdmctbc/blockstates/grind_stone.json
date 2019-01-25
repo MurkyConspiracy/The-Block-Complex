@@ -1,13 +1,13 @@
 {
-    "variants": 
-    {
-        "grinding=false,facing=north": { "model": "pdmctbc:grind_stone" },
-        "grinding=false,facing=east": { "model": "pdmctbc:grind_stone", "y": 90 },
-        "grinding=false,facing=south": { "model": "pdmctbc:grind_stone", "y": 180 },
-        "grinding=false,facing=west": { "model": "pdmctbc:grind_stone", "y": 270 },
-        "grinding=true,facing=north": { "model": "pdmctbc:grind_stone" },
-        "grinding=true,facing=east": { "model": "pdmctbc:grind_stone", "y": 90 },
-        "grinding=true,facing=south": { "model": "pdmctbc:grind_stone", "y": 180 },
-        "grinding=true,facing=west": { "model": "pdmctbc:grind_stone", "y":270  }
+    "variants": {
+        "facing=north,grinding=false": { "model": "pdmctbc:block/grind_stone" },
+        "facing=south,grinding=false": { "model": "pdmctbc:block/grind_stone", "y": 180 },
+        "facing=west,grinding=false":  { "model": "pdmctbc:block/grind_stone", "y": 270 },
+        "facing=east,grinding=false":  { "model": "pdmctbc:block/grind_stone", "y": 90 },
+        "facing=north,grinding=true": { "model": "pdmctbc:block/grind_stone" },
+        "facing=south,grinding=true": { "model": "pdmctbc:block/grind_stone", "y": 180 },
+        "facing=west,grinding=true":  { "model": "pdmctbc:block/grind_stone", "y": 270 },
+        "facing=east,grinding=true":  { "model": "pdmctbc:block/grind_stone", "y": 90 }
     }
 }
+ 
