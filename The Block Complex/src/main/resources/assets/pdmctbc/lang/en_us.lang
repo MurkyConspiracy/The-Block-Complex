@@ -2,8 +2,10 @@
 item.decay_food.name=Decayed Food
 
 //Nugget Names
+item.copper_nugget.name=Copper Nugget
 
 //Ingot Names
+item.copper_ingot.name=Copper Ingot
 item.ingot_tin.name=Tin Ingot
 item.ingot_lead.name=Lead Ingot
 item.ingot_zinc.name=Zinc Ingot
