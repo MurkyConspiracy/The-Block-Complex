@@ -110,14 +110,14 @@ public class BlockMachineGrindStone extends Block implements IHasModel
 		IBlockState state = worldIn.getBlockState(pos);
 		TileEntity tileentity = worldIn.getTileEntity(pos);
 		
-		if(active) 
-		{
-			worldIn.setBlockState(pos, BlockInit.GRIND_STONE.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(GRINDING, true), 3);
-		}
-		else 
-		{
-			worldIn.setBlockState(pos, BlockInit.GRIND_STONE.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(GRINDING, false), 3);
-		}
+		/*
+		 * if(active) { worldIn.setBlockState(pos,
+		 * BlockInit.GRIND_STONE.getDefaultState().withProperty(FACING,
+		 * state.getValue(FACING)).withProperty(GRINDING, true), 3); } else {
+		 * worldIn.setBlockState(pos,
+		 * BlockInit.GRIND_STONE.getDefaultState().withProperty(FACING,
+		 * state.getValue(FACING)).withProperty(GRINDING, false), 3); }
+		 */
 		
 		if(tileentity != null) 
 		{
@@ -171,7 +171,7 @@ public class BlockMachineGrindStone extends Block implements IHasModel
 	@Override
 	protected BlockStateContainer createBlockState() 
 	{
-		return new BlockStateContainer(this, new IProperty[] {GRINDING,FACING});
+		return new BlockStateContainer(this, new IProperty[] {GRINDING, FACING});
 	}
 	
 	@Override
