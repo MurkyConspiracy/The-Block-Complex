@@ -45,6 +45,21 @@ tile.ore_end_redberyl.name=Red Beryl Ore
 //Block Names
 tile.block_decay.name=Decayed Block
 
-
 //Item Groups
 itemGroup.theblockcomplextab=The Block Complex
+
+//Ruby Gems
+item.ruby_chipped.name=Chipped Ruby
+item.ruby_flawed.name=Flawed Ruby
+item.ruby_normal.name=Ruby
+item.ruby_flawless.name=Flawless Ruby
+item.ruby_perfect.name=Perfect Ruby
+item.ruby_radiant.name=Radiant Ruby
+item.ruby_square.name=Square Ruby
+item.ruby_flawless_square.name=Flawless Square Ruby
+item.ruby_perfect_square.name=Perfect Square Ruby
+item.ruby_radiant_square.name=Radiant Square Ruby
+item.ruby_star.name=Star Ruby
+item.ruby_flawless_star.name=Flawless Star Ruby
+item.ruby_perfect_star.name=Perfect Star Ruby
+item.ruby_radiant_star.name=Radiant Star Ruby
