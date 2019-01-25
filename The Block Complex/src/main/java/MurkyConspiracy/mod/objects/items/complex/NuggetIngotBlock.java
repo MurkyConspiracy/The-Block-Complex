@@ -1,9 +1,11 @@
 package MurkyConspiracy.mod.objects.items.complex;
 
 import MurkyConspiracy.mod.Main;
+import MurkyConspiracy.mod.init.BlockInit;
 import MurkyConspiracy.mod.init.ItemInit;
 import MurkyConspiracy.mod.util.interfaces.IHasModel;
-import net.minecraft.client.Minecraft;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -13,8 +15,9 @@ import net.minecraftforge.client.model.ModelLoader;
 
 public class NuggetIngotBlock extends Item implements IHasModel
 {
-
-	private boolean iHasNugget, iHasIngot, iHasBlock;
+	
+	private ItemStack myBlock, myNugget, myIngot;
+	
 	public NuggetIngotBlock(String name)
 	{
 
@@ -24,6 +27,9 @@ public class NuggetIngotBlock extends Item implements IHasModel
 		setMaxDamage(0);
 		setCreativeTab(Main.theblockcomplextab);
 		
+		myNugget = new ItemStack(this, 1, 0);
+		myIngot = new ItemStack(this, 1, 1);
+	
 		ItemInit.ITEMS.add(this);
 	}
 	
@@ -38,6 +44,16 @@ public class NuggetIngotBlock extends Item implements IHasModel
 			}
 		}
 	}
+	
+	public Block getBlock()
+	{ return Block.getBlockFromItem(this.myBlock.getItem()); }
+	
+	public Item getNugget()
+	{ return this.myNugget.getItem(); }
+	
+	public Item getIngot()
+	{ return this.myIngot.getItem(); }
+	
 	
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
@@ -60,7 +76,8 @@ public class NuggetIngotBlock extends Item implements IHasModel
 enum NIB
 {
 	NUGGET(0, "nugget"),
-	INGOT(1, "ingot");
+	INGOT(1, "ingot"),
+	BLOCK(2, "block");
 	
 	private final int meta;
 
