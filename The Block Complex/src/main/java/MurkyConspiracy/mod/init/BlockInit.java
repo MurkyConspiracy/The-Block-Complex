@@ -22,4 +22,7 @@ public class BlockInit
 	public static final Block ORE_OVERWORLD = new BlockOresOverworldMinerals("ore_overworld", Material.ROCK);
 	public static final Block METAL_OVERWORLD = new BlockOresOverworldMetals("metal_overworld", Material.ROCK);
 	
+	//Machines
+	public static final Block GRIND_STONE = new BlockBase("rind_stone", Material.ROCK);
+	
 }
