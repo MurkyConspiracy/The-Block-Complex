@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "pdmctbc:items/nugget_copper"
-    }
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "pdmctbc:items/nugget_copper"
+	}
 }

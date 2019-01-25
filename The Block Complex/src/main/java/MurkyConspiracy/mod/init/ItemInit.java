@@ -22,4 +22,6 @@ public class ItemInit
 	public static final Item ingot_platinum = new ItemBase("ingot_platinum");
 	public static final Item ingot_tungsten = new ItemBase("ingot_tungsten");*/
 	
+	
+	
 }

@@ -1,0 +1,13 @@
+{
+    "variants": 
+    {
+        "grinding=false,facing=north": { "model": "pdmctbc:grind_stone" },
+        "grinding=false,facing=east": { "model": "pdmctbc:grind_stone", "y": 90 },
+        "grinding=false,facing=south": { "model": "pdmctbc:grind_stone", "y": 180 },
+        "grinding=false,facing=west": { "model": "pdmctbc:grind_stone", "y": 270 },
+        "grinding=true,facing=north": { "model": "pdmctbc:grind_stone" },
+        "grinding=true,facing=east": { "model": "pdmctbc:grind_stone", "y": 90 },
+        "grinding=true,facing=south": { "model": "pdmctbc:grind_stone", "y": 180 },
+        "grinding=true,facing=west": { "model": "pdmctbc:grind_stone", "y":270  }
+    }
+}
