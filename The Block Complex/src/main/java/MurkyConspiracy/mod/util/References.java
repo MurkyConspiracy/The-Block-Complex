@@ -10,5 +10,5 @@ public class References
 	public static final String UUID1 = "74698a2ae-1615-11e9-ab14-d663bd873d93";
 	
 	//GUIIDs
-	public static final int GUI_GRIND_STONE = 100; 
+	public static final int GUI_GRIND_STONE = 0; 
 }

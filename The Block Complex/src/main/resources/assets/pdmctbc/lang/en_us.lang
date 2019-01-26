@@ -13,8 +13,11 @@ item.ingot_nickel.name=Nickel Ingot
 item.ingot_platinum.name=Platinum Ingot
 item.ingot_tungsten.name=Tungsten Ingot
 
-//Block 
+//Block Names
 tile.copper_block.name=Copper Block
+
+//Machine Names
+container.grind_stone=Grind Stone
 
 //Overworld Ore Names
 tile.ore_overworld_opal.name=Opal Ore
