@@ -7,8 +7,6 @@ import MurkyConspiracy.mod.init.BlockInit;
 import MurkyConspiracy.mod.init.ItemInit;
 import MurkyConspiracy.mod.objects.blocks.tileentities.TileEntityGrindStone;
 import MurkyConspiracy.mod.util.References;
-import MurkyConspiracy.mod.util.handlers.EnumHandler;
-import MurkyConspiracy.mod.util.interfaces.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
