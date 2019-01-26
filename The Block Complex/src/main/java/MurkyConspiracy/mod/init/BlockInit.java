@@ -24,5 +24,6 @@ public class BlockInit
 	public static final Block METAL_OVERWORLD = new BlockOresOverworldMetals("metal_overworld", Material.ROCK);
 	
 	//Machines
-	public static final Block GRIND_STONE = new BlockMachineGrindStone("grind_stone");
+	public static final Block GRIND_STONE = new BlockMachineGrindStone("grind_stone", Material.ROCK);
+	
 }

@@ -1,9 +1,12 @@
 package MurkyConspiracy.mod.objects.items.complex;
 
 import MurkyConspiracy.mod.Main;
+import MurkyConspiracy.mod.init.BlockInit;
 import MurkyConspiracy.mod.init.ItemInit;
+import MurkyConspiracy.mod.objects.blocks.BlockBase;
 import MurkyConspiracy.mod.util.interfaces.IHasModel;
-import net.minecraft.client.Minecraft;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -13,18 +16,26 @@ import net.minecraftforge.client.model.ModelLoader;
 
 public class NuggetIngotBlock extends Item implements IHasModel
 {
-
-	private boolean iHasNugget, iHasIngot, iHasBlock;
+	
+	private ItemStack myNugget, myIngot;
+	private Block myBlock;
+	
 	public NuggetIngotBlock(String name)
 	{
-
+		
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setHasSubtypes(true);
 		setMaxDamage(0);
 		setCreativeTab(Main.theblockcomplextab);
 		
+		myNugget = new ItemStack(this, 1, 0);
+		myIngot = new ItemStack(this, 1, 1);
+		
+		myBlock = new BlockBase("copper_block", Material.IRON);
+		
 		ItemInit.ITEMS.add(this);
+		
 	}
 	
 	@Override
@@ -38,6 +49,15 @@ public class NuggetIngotBlock extends Item implements IHasModel
 			}
 		}
 	}
+	
+	public Block getBlock()
+	{ return this.myBlock; }
+	
+	public Item getNugget()
+	{ return this.myNugget.getItem(); }
+	
+	public Item getIngot()
+	{ return this.myIngot.getItem(); }
 	
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
@@ -53,6 +73,7 @@ public class NuggetIngotBlock extends Item implements IHasModel
 		{
 			ModelLoader.setCustomModelResourceLocation(this, i, new ModelResourceLocation(this.getRegistryName() + "_" + NIB.byNIBMeta(i).getName(), "inventory"));
 		}
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this.getBlock()), 0, "inventory");
 	}
 	
 }
@@ -60,7 +81,8 @@ public class NuggetIngotBlock extends Item implements IHasModel
 enum NIB
 {
 	NUGGET(0, "nugget"),
-	INGOT(1, "ingot");
+	INGOT(1, "ingot"),
+	BLOCK(2, "block");
 	
 	private final int meta;
 
@@ -112,3 +134,4 @@ enum NIB
         return this.unlocalizedName;
     }
 }
+

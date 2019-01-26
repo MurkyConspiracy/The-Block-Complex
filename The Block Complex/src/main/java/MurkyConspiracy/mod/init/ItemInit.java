@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import MurkyConspiracy.mod.objects.items.ItemBase;
+import MurkyConspiracy.mod.objects.items.complex.GemCuts;
 import MurkyConspiracy.mod.objects.items.complex.NuggetIngotBlock;
 import net.minecraft.item.Item;
 
@@ -14,6 +15,7 @@ public class ItemInit
 	public static final Item decay_food = new ItemBase("decay_food");
 	public static final Item copper = new NuggetIngotBlock("copper");
 	
+	public static final Item ruby = new GemCuts("ruby");
 	//public static final Item copper = new NuggetBase("copper", false);
 /*	public static final Item ingot_tin = new ItemBase("ingot_tin");
 	public static final Item ingot_lead = new ItemBase("ingot_lead");

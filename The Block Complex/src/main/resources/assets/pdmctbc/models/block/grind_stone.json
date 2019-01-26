@@ -1,12 +1,8 @@
 {
     "parent": "block/orientable",
-    "textures": {
-        "particle": "tutorial:blocks/grind_stone_side",
-        "up": "tutorial:blocks/grind_stone_side",
-        "down": "tutorial:blocks/grind_stone_side",
-        "north": "tutorial:blocks/grind_stone_front_off",
-        "east": "tutorial:blocks/grind_stone_side",
-        "south": "tutorial:blocks/grind_stone_side",
-        "west": "tutorial:blocks/grind_stone_side"
-    }
+     "textures": {
+        "top": "pdmctbc:blocks/grind_stone_top",
+        "front": "pdmctbc:blocks/grind_stone_side",
+        "side": "pdmctbc:blocks/grind_stone_side"
+	}
 }
