@@ -60,3 +60,45 @@ https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
 
 For more details update more often refer to the Forge Forums:
 http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
+
+
+Development Plan:
+	New Features: 
+	1.	More complex ore processing system
+		a.	New Machines
+		b.	New Items
+		c.	New Gameplay Mechanics
+			i.	Grinding
+			ii.	Refining
+			iii.	Casting
+	2.	New Complex Jewel crafting system
+		a.	Find jewels throughout the world
+		b.	Different gems have different stats and affects
+		c.	Cut gems to make them more powerful 
+	3.	New Farming system
+		a.	New tools and items to farm with
+		b.	Adding fertilizer
+		c.	Pick plants instead of breaking them
+		d.	Introduction of seasons
+		e.	New crops and vegetables
+		f.	New feeding mechanisms for livestock.
+	4.	Armor and weapons
+		a.	New gem implementation mechanic
+		b.	New armor and weapon types
+	5.	Energy system
+		a.	Some new machines will require energy to function
+		b.	Addition of different energy sources
+			i.	Solar
+			ii.	Geothermal
+			iii.	Wind	
+			iv.	Coal
+		c.	Batteries to store energy
+	6.	New enemies to fight
+		a.	New dungeon to find with dangerous creatures within
+		b.	Fight for Fame and Fortune
+		c.	Village quest/reputation system
+
+
+
+
+
