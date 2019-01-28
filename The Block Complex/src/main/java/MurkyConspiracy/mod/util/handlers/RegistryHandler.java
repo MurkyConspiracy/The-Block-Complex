@@ -4,9 +4,11 @@ import MurkyConspiracy.mod.init.BlockInit;
 import MurkyConspiracy.mod.init.ItemInit;
 import MurkyConspiracy.mod.util.interfaces.IHasModel;
 import MurkyConspiracy.mod.world.gen.WorldGenCustomOres;
+import MurkyConspiracy.mod.util.handlers.EventHandler;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -51,5 +53,6 @@ public class RegistryHandler
 	public static void otherRegistries()
 	{
 		GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 1000);
+		MinecraftForge.EVENT_BUS.register(new EventHandler());
 	}
 }
