@@ -1,7 +1,6 @@
 package MurkyConspiracy.mod.util.handlers;
 
 import java.util.Random;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBeetroot;
 import net.minecraft.block.BlockCarrot;
