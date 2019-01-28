@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import MurkyConspiracy.mod.objects.blocks.BlockBase;
+import MurkyConspiracy.mod.objects.blocks.crops.BlockCoffeePlant;
 import MurkyConspiracy.mod.objects.blocks.machines.BlockMachineGrindStone;
 import MurkyConspiracy.mod.objects.blocks.ores.BlockOresEnd;
 import MurkyConspiracy.mod.objects.blocks.ores.BlockOresNether;
@@ -25,5 +26,7 @@ public class BlockInit
 	
 	//Machines
 	public static final Block GRIND_STONE = new BlockMachineGrindStone("grind_stone", Material.ROCK);
-	
+
+	//Crops
+	public static final Block COFFEE_PLANT = new BlockCoffeePlant("coffee_plant");
 }

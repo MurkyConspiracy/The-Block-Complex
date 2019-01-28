@@ -47,3 +47,9 @@ tile.block_decay.name=Decayed Block
 
 //Item Groups
 itemGroup.theblockcomplextab=The Block Complex
+
+//Coffee
+item.coffee_cake.name=Coffee Cake
+item.coffee_cherry.name=Coffee Cherry
+item.coffee_bean.name=Coffee Bean
+tile.coffee_plant.name=Coffee Plant
