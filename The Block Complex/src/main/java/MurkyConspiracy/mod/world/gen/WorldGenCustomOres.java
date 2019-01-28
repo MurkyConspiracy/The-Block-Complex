@@ -3,10 +3,10 @@ package MurkyConspiracy.mod.world.gen;
 import java.util.Random;
 
 import MurkyConspiracy.mod.init.BlockInit;
-import MurkyConspiracy.mod.objects.blocks.BlockOresEnd;
-import MurkyConspiracy.mod.objects.blocks.BlockOresNether;
-import MurkyConspiracy.mod.objects.blocks.BlockOresOverworldMinerals;
-import MurkyConspiracy.mod.objects.blocks.BlockOresOverworldMetals;
+import MurkyConspiracy.mod.objects.blocks.ores.BlockOresEnd;
+import MurkyConspiracy.mod.objects.blocks.ores.BlockOresNether;
+import MurkyConspiracy.mod.objects.blocks.ores.BlockOresOverworldMetals;
+import MurkyConspiracy.mod.objects.blocks.ores.BlockOresOverworldMinerals;
 import MurkyConspiracy.mod.util.handlers.EnumHandler;
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;

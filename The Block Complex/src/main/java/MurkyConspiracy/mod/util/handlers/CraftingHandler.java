@@ -7,7 +7,7 @@ import com.google.common.collect.Lists;
 
 import MurkyConspiracy.mod.init.BlockInit;
 import MurkyConspiracy.mod.init.ItemInit;
-import MurkyConspiracy.mod.objects.blocks.BlockOresOverworldMetals;
+import MurkyConspiracy.mod.objects.blocks.ores.BlockOresOverworldMetals;
 import net.minecraft.init.Blocks;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;

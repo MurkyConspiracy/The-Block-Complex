@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import MurkyConspiracy.mod.objects.blocks.BlockBase;
-import MurkyConspiracy.mod.objects.blocks.BlockOresEnd;
-import MurkyConspiracy.mod.objects.blocks.BlockOresNether;
-import MurkyConspiracy.mod.objects.blocks.BlockOresOverworldMinerals;
 import MurkyConspiracy.mod.objects.blocks.machines.BlockMachineGrindStone;
-import MurkyConspiracy.mod.objects.blocks.BlockOresOverworldMetals;
+import MurkyConspiracy.mod.objects.blocks.ores.BlockOresEnd;
+import MurkyConspiracy.mod.objects.blocks.ores.BlockOresNether;
+import MurkyConspiracy.mod.objects.blocks.ores.BlockOresOverworldMetals;
+import MurkyConspiracy.mod.objects.blocks.ores.BlockOresOverworldMinerals;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 

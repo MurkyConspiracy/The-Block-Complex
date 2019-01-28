@@ -1,4 +1,4 @@
-package MurkyConspiracy.mod.objects.blocks;
+package MurkyConspiracy.mod.objects.blocks.ores;
 
 import MurkyConspiracy.mod.Main;
 import MurkyConspiracy.mod.init.BlockInit;
