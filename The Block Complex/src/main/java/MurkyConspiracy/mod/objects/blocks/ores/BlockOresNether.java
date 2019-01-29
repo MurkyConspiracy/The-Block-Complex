@@ -95,7 +95,7 @@ public class BlockOresNether extends Block implements IHasModel, IMetaName
 	public void registerModels() {
 		for(int i = 0; i < EnumHandler.EnumTypeNether.values().length; i++)
 		{
-			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "ore_nether_" + EnumHandler.EnumTypeNether.values()[i].getName(), "inventory");
+			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "ore/nether/ore_nether_" + EnumHandler.EnumTypeNether.values()[i].getName(), "inventory");
 		}
 	}
 }

@@ -1,14 +1,14 @@
 {
     "variants":
     {
-        "variant=copper": {"model": "pdmctbc:metal_overworld_copper"},
-        "variant=tin": {"model": "pdmctbc:metal_overworld_tin"},
-        "variant=lead": {"model": "pdmctbc:metal_overworld_lead"},
-        "variant=zinc": {"model": "pdmctbc:metal_overworld_zinc"},
-        "variant=mercury": {"model": "pdmctbc:metal_overworld_mercury"},
-        "variant=nickle": {"model": "pdmctbc:metal_overworld_nickle"},
-        "variant=platinum": {"model": "pdmctbc:metal_overworld_platinum"},
-        "variant=tungsten": {"model": "pdmctbc:metal_overworld_tungsten"}
+        "variant=copper": {"model": "pdmctbc:ore/metal/metal_overworld_copper"},
+        "variant=tin": {"model": "pdmctbc:ore/metal/metal_overworld_tin"},
+        "variant=lead": {"model": "pdmctbc:ore/metal/metal_overworld_lead"},
+        "variant=zinc": {"model": "pdmctbc:ore/metal/metal_overworld_zinc"},
+        "variant=mercury": {"model": "pdmctbc:ore/metal/metal_overworld_mercury"},
+        "variant=nickel": {"model": "pdmctbc:ore/metal/metal_overworld_nickel"},
+        "variant=platinum": {"model": "pdmctbc:ore/metal/metal_overworld_platinum"},
+        "variant=tungsten": {"model": "pdmctbc:ore/metal/metal_overworld_tungsten"}
         
     }
 }

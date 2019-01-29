@@ -96,7 +96,7 @@ public class BlockOresEnd extends Block implements IHasModel, IMetaName
 	public void registerModels() {
 		for(int i = 0; i < EnumHandler.EnumTypeEnd.values().length; i++)
 		{
-			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "ore_end_" + EnumHandler.EnumTypeEnd.values()[i].getName(), "inventory");
+			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "ore/end/ore_end_" + EnumHandler.EnumTypeEnd.values()[i].getName(), "inventory");
 		}
 	}
 }

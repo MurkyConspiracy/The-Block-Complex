@@ -21,7 +21,7 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 public class WorldGenCustomOres implements IWorldGenerator
 {
 	private WorldGenerator ore_overworld_opal, ore_overworld_peridot, ore_overworld_apatite;
-	private WorldGenerator metal_overworld_copper, metal_overworld_tin, metal_overworld_lead, metal_overworld_zinc, metal_overworld_mercury, metal_overworld_nickle, metal_overworld_platinum, metal_overworld_tungsten;
+	private WorldGenerator metal_overworld_copper, metal_overworld_tin, metal_overworld_lead, metal_overworld_zinc, metal_overworld_nickel, metal_overworld_platinum, metal_overworld_tungsten;
 	private WorldGenerator ore_nether_agate, ore_nether_peridot, ore_nether_flourite;
 	private WorldGenerator ore_end_zircon, ore_end_iridium, ore_end_blackopal, ore_end_redberyl;
 
@@ -35,8 +35,7 @@ public class WorldGenCustomOres implements IWorldGenerator
 		metal_overworld_tin = new WorldGenMinable(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.TIN), 3, BlockMatcher.forBlock(Blocks.STONE));
 		metal_overworld_lead = new WorldGenMinable(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.LEAD), 3, BlockMatcher.forBlock(Blocks.STONE));
 		metal_overworld_zinc = new WorldGenMinable(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.ZINC), 3, BlockMatcher.forBlock(Blocks.STONE));
-		metal_overworld_mercury = new WorldGenMinable(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.MERCURY), 3, BlockMatcher.forBlock(Blocks.STONE));
-		metal_overworld_nickle = new WorldGenMinable(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.NICKLE), 3, BlockMatcher.forBlock(Blocks.STONE));
+		metal_overworld_nickel = new WorldGenMinable(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.NICKEL), 3, BlockMatcher.forBlock(Blocks.STONE));
 		metal_overworld_platinum = new WorldGenMinable(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.PLATINUM), 3, BlockMatcher.forBlock(Blocks.STONE));
 		metal_overworld_tungsten = new WorldGenMinable(BlockInit.METAL_OVERWORLD.getDefaultState().withProperty(BlockOresOverworldMetals.VARIANT, EnumHandler.EnumTypeOverworldMetals.TUNGSTEN), 3, BlockMatcher.forBlock(Blocks.STONE));
 		
@@ -85,8 +84,7 @@ public class WorldGenCustomOres implements IWorldGenerator
 			runGenerator(metal_overworld_tin, world, random, chunkX, chunkZ, 25, 0, 65);
 			runGenerator(metal_overworld_lead, world, random, chunkX, chunkZ, 25, 0, 65);
 			runGenerator(metal_overworld_zinc, world, random, chunkX, chunkZ, 25, 0, 65);
-			runGenerator(metal_overworld_mercury, world, random, chunkX, chunkZ, 25, 0, 65);
-			runGenerator(metal_overworld_nickle, world, random, chunkX, chunkZ, 25, 0, 65);
+			runGenerator(metal_overworld_nickel, world, random, chunkX, chunkZ, 25, 0, 65);
 			runGenerator(metal_overworld_platinum, world, random, chunkX, chunkZ, 25, 0, 65);
 			runGenerator(metal_overworld_tungsten, world, random, chunkX, chunkZ, 25, 0, 65);
 			break;

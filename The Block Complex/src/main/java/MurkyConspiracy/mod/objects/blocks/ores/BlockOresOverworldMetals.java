@@ -95,7 +95,7 @@ public class BlockOresOverworldMetals extends Block implements IHasModel, IMetaN
 		public void registerModels() {
 			for(int i = 0; i < EnumHandler.EnumTypeOverworldMetals.values().length; i++)
 			{
-				Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "metal_overworld_" + EnumHandler.EnumTypeOverworldMetals.values()[i].getName(), "inventory");
+				Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "ore/metal/metal_overworld_" + EnumHandler.EnumTypeOverworldMetals.values()[i].getName(), "inventory");
 			}
 		}
 	

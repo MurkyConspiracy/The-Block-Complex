@@ -28,7 +28,7 @@ public class BlockCoffeePlant extends BlockCrops
 	{
 		
 		setUnlocalizedName(name);
-		setRegistryName(name);
+		setRegistryName("crops/" + name);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));

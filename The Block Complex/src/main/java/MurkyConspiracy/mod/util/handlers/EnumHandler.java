@@ -71,10 +71,9 @@ public class EnumHandler
 		TIN(1, "tin"),
 		LEAD(2, "lead"),
 		ZINC(3, "zinc"),
-		MERCURY(4, "mercury"),
-		NICKLE(5, "nickle"),
-		PLATINUM(6, "platinum"),
-		TUNGSTEN(7, "tungsten");
+		NICKEL(4, "nickel"),
+		PLATINUM(5, "platinum"),
+		TUNGSTEN(6, "tungsten");
 		
 		private static final EnumTypeOverworldMetals [] META_LOOKUP = new EnumTypeOverworldMetals[values().length];
 		private final int meta;

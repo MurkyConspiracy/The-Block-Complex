@@ -5,6 +5,7 @@ import java.util.List;
 
 import MurkyConspiracy.mod.objects.blocks.BlockBase;
 import MurkyConspiracy.mod.objects.blocks.crops.BlockCoffeePlant;
+import MurkyConspiracy.mod.objects.blocks.crops.BlockTomatoPlant;
 import MurkyConspiracy.mod.objects.blocks.machines.BlockMachineGrindStone;
 import MurkyConspiracy.mod.objects.blocks.ores.BlockOresEnd;
 import MurkyConspiracy.mod.objects.blocks.ores.BlockOresNether;
@@ -29,4 +30,5 @@ public class BlockInit
 
 	//Crops
 	public static final Block COFFEE_PLANT = new BlockCoffeePlant("coffee_plant");
+	public static final Block TOMATO_PLANT = new BlockTomatoPlant("tomato_plant");
 }

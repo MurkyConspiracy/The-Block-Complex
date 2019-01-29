@@ -22,6 +22,18 @@ public class BlockBase extends Block implements IHasModel
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
+	
+	public BlockBase(String registryName, String unlocalizedName, Material material)
+	{
+		
+		super(material);
+		setUnlocalizedName(unlocalizedName);
+		setRegistryName(registryName);
+		setCreativeTab(Main.theblockcomplextab);
+		
+		BlockInit.BLOCKS.add(this);
+		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+	}
 
 	@Override
 	public void registerModels() {

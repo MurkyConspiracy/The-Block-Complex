@@ -22,14 +22,14 @@ tile.ore_overworld_peridot.name=Peridot Ore
 tile.ore_overworld_apatite.name=Apatite Ore
 
 //Overworld Metal Names
-tile.metal_overworld_copper.name=Copper ore
-tile.metal_overworld_tin.name=Tin ore
-tile.metal_overworld_lead.name=Lead ore
-tile.metal_overworld_zinc.name=Zinc ore
-tile.metal_overworld_mercury.name=Mercury ore
-tile.metal_overworld_nickle.name=Nickle ore
-tile.metal_overworld_platinum.name=Platinum ore
-tile.metal_overworld_tungsten.name=Tungsten ore
+tile.metal_overworld_copper.name=Copper Ore
+tile.metal_overworld_tin.name=Tin Ore
+tile.metal_overworld_lead.name=Lead Ore
+tile.metal_overworld_zinc.name=Zinc Ore
+tile.metal_overworld_mercury.name=Mercury Ore
+tile.metal_overworld_nickel.name=Nickel Ore
+tile.metal_overworld_platinum.name=Platinum Ore
+tile.metal_overworld_tungsten.name=Tungsten Ore
 
 //Nether Ore Names
 tile.ore_nether_agate.name=Nether Agate Ore
@@ -53,3 +53,8 @@ item.coffee_cake.name=Coffee Cake
 item.coffee_cherry.name=Coffee Cherry
 item.coffee_bean.name=Coffee Bean
 tile.coffee_plant.name=Coffee Plant
+
+//Tomato
+item.tomato.name=Tomato
+item.tomato_seeds.name=Tomato Seeds
+tile.tomato_plant.name=Tomato Plant

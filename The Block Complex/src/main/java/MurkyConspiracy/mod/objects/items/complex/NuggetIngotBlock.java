@@ -19,12 +19,12 @@ public class NuggetIngotBlock extends Item implements IHasModel
 	
 	private ItemStack myNugget, myIngot;
 	private Block myBlock;
+	private String myName;
 	
 	public NuggetIngotBlock(String name)
 	{
-		
 		setUnlocalizedName(name);
-		setRegistryName(name);
+		setRegistryName(name + "/" + name);
 		setHasSubtypes(true);
 		setMaxDamage(0);
 		setCreativeTab(Main.theblockcomplextab);
@@ -32,7 +32,7 @@ public class NuggetIngotBlock extends Item implements IHasModel
 		myNugget = new ItemStack(this, 1, 0);
 		myIngot = new ItemStack(this, 1, 1);
 		
-		myBlock = new BlockBase("copper_block", Material.IRON);
+		myBlock = new BlockBase(name + "/" + name + "_block", name + "_block", Material.IRON);
 		
 		ItemInit.ITEMS.add(this);
 		

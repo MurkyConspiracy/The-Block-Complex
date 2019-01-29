@@ -1,8 +1,8 @@
 {
     "variants":
     {
-        "variant=agate": {"model": "pdmctbc:ore_nether_agate"},
-        "variant=peridot": {"model": "pdmctbc:ore_nether_peridot"},
-        "variant=flourite": {"model": "pdmctbc:ore_nether_flourite"}
+        "variant=agate": {"model": "pdmctbc:ore/nether/ore_nether_agate"},
+        "variant=peridot": {"model": "pdmctbc:ore/nether/ore_nether_peridot"},
+        "variant=flourite": {"model": "pdmctbc:ore/nether/ore_nether_flourite"}
     }
 }

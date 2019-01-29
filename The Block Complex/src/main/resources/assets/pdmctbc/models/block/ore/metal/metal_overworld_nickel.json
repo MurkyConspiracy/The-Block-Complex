@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "pdmctbc:blocks/metal_overworld_nickel"
+    }
+}
