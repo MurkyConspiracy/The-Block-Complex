@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import MurkyConspiracy.mod.objects.blocks.BlockBase;
+import MurkyConspiracy.mod.objects.blocks.crops.BlockBroccoliPlant;
+import MurkyConspiracy.mod.objects.blocks.crops.BlockCauliflowerPlant;
 import MurkyConspiracy.mod.objects.blocks.crops.BlockCoffeePlant;
+import MurkyConspiracy.mod.objects.blocks.crops.BlockGarlicPlant;
 import MurkyConspiracy.mod.objects.blocks.crops.BlockTomatoPlant;
 import MurkyConspiracy.mod.objects.blocks.machines.BlockMachineGrindStone;
 import MurkyConspiracy.mod.objects.blocks.ores.BlockOresEnd;
@@ -31,4 +34,7 @@ public class BlockInit
 	//Crops
 	public static final Block COFFEE_PLANT = new BlockCoffeePlant("coffee_plant");
 	public static final Block TOMATO_PLANT = new BlockTomatoPlant("tomato_plant");
+	public static final Block BROCCOLI_PLANT = new BlockBroccoliPlant("broccoli_plant");
+	public static final Block CAULIFLOWER_PLANT = new BlockCauliflowerPlant("cauliflower_plant");
+	public static final Block GARLIC_PLANT = new BlockGarlicPlant("garlic_plant");
 }

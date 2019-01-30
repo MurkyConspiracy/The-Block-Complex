@@ -58,3 +58,17 @@ tile.coffee_plant.name=Coffee Plant
 item.tomato.name=Tomato
 item.tomato_seeds.name=Tomato Seeds
 tile.tomato_plant.name=Tomato Plant
+
+//Broccoli
+item.broccoli.name=Broccoli Stalk
+item.broccoli_seeds.name=Broccoli Seeds
+tile.broccoli_plant.name=Broccoli Plant
+
+//Cauliflower
+item.cauliflower.name=Cauliflower Stalk
+item.cauliflower_seeds.name=Cauliflower Seeds
+tile.cauliflower_plant.name=Cauliflower Plant
+
+//Garlic
+item.garlic_bulb.name=Garlic Bulb
+tile.garlic_plant.name=Garlic Plant

@@ -19,11 +19,11 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
-public class ItemTomatoSeeds extends ItemSeeds implements IHasModel, IPlantable
+public class ItemBroccoliSeeds extends ItemSeeds implements IHasModel, IPlantable
 {
-	public ItemTomatoSeeds(String name, Block soil)
+	public ItemBroccoliSeeds(String name, Block soil)
 	{
-		super(BlockInit.TOMATO_PLANT, soil);
+		super(BlockInit.BROCCOLI_PLANT, soil);
 		setUnlocalizedName(name);
 		setRegistryName("seeds/" + name);
 		setCreativeTab(Main.theblockcomplextab);
@@ -46,7 +46,7 @@ public class ItemTomatoSeeds extends ItemSeeds implements IHasModel, IPlantable
 	@Override
 	public IBlockState getPlant(IBlockAccess world, BlockPos pos)
 	{
-		return BlockInit.TOMATO_PLANT.getDefaultState();
+		return BlockInit.BROCCOLI_PLANT.getDefaultState();
 	}
 	
 	@Override
@@ -57,7 +57,7 @@ public class ItemTomatoSeeds extends ItemSeeds implements IHasModel, IPlantable
 		IBlockState state = worldIn.getBlockState(pos);
 		if(facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, stack) && state.getBlock().canSustainPlant(state, worldIn, pos, facing, this) && worldIn.isAirBlock(pos.up()))
 		{
-			worldIn.setBlockState(pos.up(), BlockInit.TOMATO_PLANT.getDefaultState());
+			worldIn.setBlockState(pos.up(), BlockInit.BROCCOLI_PLANT.getDefaultState());
 			stack.shrink(1);
 			return EnumActionResult.SUCCESS;
 		}
