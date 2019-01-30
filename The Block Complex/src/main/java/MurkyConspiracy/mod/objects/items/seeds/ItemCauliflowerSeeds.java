@@ -26,8 +26,9 @@ public class ItemCauliflowerSeeds extends ItemSeeds implements IHasModel, IPlant
 		super(BlockInit.CAULIFLOWER_PLANT, soil);
 		setUnlocalizedName(name);
 		setRegistryName("seeds/" + name);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexnaturetab);
 		
+		ItemInit.SEEDS.add(this);
 		ItemInit.ITEMS.add(this);
 	}
 	

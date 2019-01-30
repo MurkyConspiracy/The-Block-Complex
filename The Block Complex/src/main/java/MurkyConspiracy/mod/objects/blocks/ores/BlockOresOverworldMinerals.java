@@ -37,7 +37,7 @@ public class BlockOresOverworldMinerals extends Block implements IHasModel, IMet
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexworldtab);
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumTypeOverworld.OPAL));
 		
 		this.name = name;

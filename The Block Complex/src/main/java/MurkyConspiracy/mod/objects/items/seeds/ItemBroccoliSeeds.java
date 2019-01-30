@@ -26,8 +26,9 @@ public class ItemBroccoliSeeds extends ItemSeeds implements IHasModel, IPlantabl
 		super(BlockInit.BROCCOLI_PLANT, soil);
 		setUnlocalizedName(name);
 		setRegistryName("seeds/" + name);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexnaturetab);
 		
+		ItemInit.SEEDS.add(this);
 		ItemInit.ITEMS.add(this);
 	}
 	

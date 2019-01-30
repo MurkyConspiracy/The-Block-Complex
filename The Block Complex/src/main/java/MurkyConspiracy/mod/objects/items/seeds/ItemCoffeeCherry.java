@@ -29,8 +29,9 @@ public class ItemCoffeeCherry extends ItemFood implements IHasModel, IPlantable
 		super(amount, saturation, isWolfFood);
 		setUnlocalizedName(name);
 		setRegistryName("seeds/" + name);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexnaturetab);
 		
+		ItemInit.SEEDS.add(this);
 		ItemInit.ITEMS.add(this);
 	}
 	

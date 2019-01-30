@@ -38,7 +38,7 @@ public class BlockOresEnd extends Block implements IHasModel, IMetaName
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexworldtab);
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumTypeEnd.ZIRCON));
 		
 		this.name = name;

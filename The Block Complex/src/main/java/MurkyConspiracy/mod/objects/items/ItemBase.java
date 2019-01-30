@@ -13,7 +13,7 @@ public class ItemBase extends Item implements IHasModel
 		
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexworldtab);
 		
 		ItemInit.ITEMS.add(this);
 		

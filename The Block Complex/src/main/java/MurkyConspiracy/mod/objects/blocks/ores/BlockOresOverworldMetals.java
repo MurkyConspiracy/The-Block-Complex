@@ -37,7 +37,7 @@ public class BlockOresOverworldMetals extends Block implements IHasModel, IMetaN
 			super(material);
 			setUnlocalizedName(name);
 			setRegistryName(name);
-			setCreativeTab(Main.theblockcomplextab);
+			setCreativeTab(Main.theblockcomplexworldtab);
 			setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumTypeOverworldMetals.COPPER));
 			
 			this.name = name;

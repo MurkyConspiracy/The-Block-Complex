@@ -26,8 +26,9 @@ public class ItemTomatoSeeds extends ItemSeeds implements IHasModel, IPlantable
 		super(BlockInit.TOMATO_PLANT, soil);
 		setUnlocalizedName(name);
 		setRegistryName("seeds/" + name);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexnaturetab);
 		
+		ItemInit.SEEDS.add(this);
 		ItemInit.ITEMS.add(this);
 	}
 	

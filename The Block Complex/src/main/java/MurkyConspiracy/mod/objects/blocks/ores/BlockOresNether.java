@@ -37,7 +37,7 @@ public class BlockOresNether extends Block implements IHasModel, IMetaName
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexworldtab);
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumTypeNether.AGATE));
 		
 		this.name = name;
