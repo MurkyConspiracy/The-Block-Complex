@@ -1,7 +1,8 @@
 package MurkyConspiracy.mod;
 
 import MurkyConspiracy.mod.proxy.CommonProxy;
-import MurkyConspiracy.mod.tabs.TheBlockComplexTab;
+import MurkyConspiracy.mod.tabs.TheBlockComplexNatureTab;
+import MurkyConspiracy.mod.tabs.TheBlockComplexWorldTab;
 import MurkyConspiracy.mod.util.References;
 import MurkyConspiracy.mod.util.handlers.CraftingHandler;
 import MurkyConspiracy.mod.util.handlers.RegistryHandler;
@@ -18,7 +19,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class Main 
 {
 	
-	public static final CreativeTabs theblockcomplextab = new TheBlockComplexTab("theblockcomplextab");
+	public static final CreativeTabs theblockcomplexworldtab = new TheBlockComplexWorldTab("theblockcomplexworldtab");
+	public static final CreativeTabs  theblockcomplexnaturetab = new TheBlockComplexNatureTab("theblockcomplexnaturetab");
 	
 	@Instance
 	public static Main Instance;

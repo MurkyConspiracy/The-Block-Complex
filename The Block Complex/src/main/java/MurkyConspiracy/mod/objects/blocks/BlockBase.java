@@ -17,7 +17,7 @@ public class BlockBase extends Block implements IHasModel
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexworldtab);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -29,7 +29,7 @@ public class BlockBase extends Block implements IHasModel
 		super(material);
 		setUnlocalizedName(unlocalizedName);
 		setRegistryName(registryName);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexworldtab);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

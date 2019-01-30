@@ -27,7 +27,7 @@ public class NuggetIngotBlock extends Item implements IHasModel
 		setRegistryName(name + "/" + name);
 		setHasSubtypes(true);
 		setMaxDamage(0);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexworldtab);
 		
 		myNugget = new ItemStack(this, 1, 0);
 		myIngot = new ItemStack(this, 1, 1);

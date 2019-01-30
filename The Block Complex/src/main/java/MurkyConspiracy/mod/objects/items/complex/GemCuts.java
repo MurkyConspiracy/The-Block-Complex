@@ -20,7 +20,7 @@ public class GemCuts extends Item implements IHasModel
 		setRegistryName(name);
 		setHasSubtypes(true);
 		setMaxDamage(0);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexworldtab);
 		
 		ItemInit.ITEMS.add(this);
 		

@@ -18,7 +18,7 @@ public class ItemCustomFood extends ItemFood implements IHasModel
 		super(amount, saturation, isWolfFood);
 		setUnlocalizedName(name);
 		setRegistryName("food/" + name);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexnaturetab);
 		
 		ItemInit.ITEMS.add(this);
 	}

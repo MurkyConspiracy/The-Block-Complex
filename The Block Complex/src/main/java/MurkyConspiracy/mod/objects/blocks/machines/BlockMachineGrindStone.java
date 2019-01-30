@@ -48,7 +48,7 @@ public class BlockMachineGrindStone extends Block implements IHasModel
         setResistance(8F);
         setSoundType(SoundType.STONE);
         setHarvestLevel("pickaxe", 1);
-		setCreativeTab(Main.theblockcomplextab);
+		setCreativeTab(Main.theblockcomplexworldtab);
         setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 
         BlockInit.BLOCKS.add(this);

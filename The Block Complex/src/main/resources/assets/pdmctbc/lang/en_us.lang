@@ -46,7 +46,8 @@ tile.ore_end_redberyl.name=Red Beryl Ore
 tile.block_decay.name=Decayed Block
 
 //Item Groups
-itemGroup.theblockcomplextab=The Block Complex
+itemGroup.theblockcomplexworldtab=The Block Complex: World
+itemGroup.theblockcomplexnaturetab=The Block Complex: Nature
 
 //Coffee
 item.coffee_cake.name=Coffee Cake
