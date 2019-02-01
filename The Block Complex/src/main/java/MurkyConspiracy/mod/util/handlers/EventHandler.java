@@ -5,11 +5,13 @@ import java.util.Random;
 import org.apache.commons.lang3.ArrayUtils;
 
 import MurkyConspiracy.mod.init.BlockInit;
+import MurkyConspiracy.mod.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBeetroot;
 import net.minecraft.block.BlockCarrot;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.BlockPotato;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -46,8 +48,8 @@ public class EventHandler
 				if(wheat.isMaxAge(event.getWorld().getBlockState(event.getPos())))
 				{
 					int temp = rand.nextInt(2);
-					event.getEntityPlayer().addItemStackToInventory(new ItemStack(Items.WHEAT));
-					event.getEntityPlayer().addItemStackToInventory(new ItemStack(Items.WHEAT_SEEDS, temp, 0));
+					event.getWorld().spawnEntity(new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Items.WHEAT)));
+					event.getWorld().spawnEntity(new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Items.WHEAT_SEEDS, temp, 0)));
 					event.getWorld().setBlockState(event.getPos(), wheat.withAge(0), 2);
 				}
 			}
@@ -57,8 +59,8 @@ public class EventHandler
 				if(carrot.isMaxAge(event.getWorld().getBlockState(event.getPos())))
 				{
 					int temp = rand.nextInt(2);
-					event.getEntityPlayer().addItemStackToInventory(new ItemStack(Items.CARROT));
-					event.getEntityPlayer().addItemStackToInventory(new ItemStack(Items.CARROT, temp, 0));
+					event.getWorld().spawnEntity(new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Items.CARROT)));
+					event.getWorld().spawnEntity(new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Items.CARROT, temp, 0)));
 					event.getWorld().setBlockState(event.getPos(), carrot.withAge(0), 2);
 				}
 			}
@@ -68,8 +70,8 @@ public class EventHandler
 				if(potatoe.isMaxAge(event.getWorld().getBlockState(event.getPos())))
 				{
 					int temp = rand.nextInt(2);
-					event.getEntityPlayer().addItemStackToInventory(new ItemStack(Items.POTATO));
-					event.getEntityPlayer().addItemStackToInventory(new ItemStack(Items.POTATO, temp, 0));
+					event.getWorld().spawnEntity(new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Items.POTATO)));
+					event.getWorld().spawnEntity(new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Items.POTATO, temp, 0)));
 					if(temp == 0)
 					{
 						if(rand.nextFloat() < 0.08f)
@@ -84,8 +86,8 @@ public class EventHandler
 				if(beet.isMaxAge(event.getWorld().getBlockState(event.getPos())))
 				{
 					int temp = rand.nextInt(2);
-					event.getEntityPlayer().addItemStackToInventory(new ItemStack(Items.BEETROOT));
-					event.getEntityPlayer().addItemStackToInventory(new ItemStack(Items.BEETROOT_SEEDS, temp + 1, 0));
+					event.getWorld().spawnEntity(new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Items.BEETROOT)));
+					event.getWorld().spawnEntity(new EntityItem(event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(Items.BEETROOT, temp, 0)));
 					event.getWorld().setBlockState(event.getPos(), beet.withAge(0), 2);
 				}
 			}
