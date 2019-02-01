@@ -73,3 +73,12 @@ tile.cauliflower_plant.name=Cauliflower Plant
 //Garlic
 item.garlic_bulb.name=Garlic Bulb
 tile.garlic_plant.name=Garlic Plant
+
+//Rhubarb
+item.rhubarb.name=Rhubarb Stalk
+item.rhubarb_seeds.name=Rhubarb Seeds
+tile.rhubarb_plant.name=Rhubarb Plant
+
+//Strawberry
+item.strawberry.name=Strawberry
+tile.strawbery_plant.name=Strawberry Plant

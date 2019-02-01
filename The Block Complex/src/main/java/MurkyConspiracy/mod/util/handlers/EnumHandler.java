@@ -1,5 +1,7 @@
 package MurkyConspiracy.mod.util.handlers;
 
+import java.util.logging.Logger;
+
 import net.minecraft.util.IStringSerializable;
 
 public class EnumHandler 

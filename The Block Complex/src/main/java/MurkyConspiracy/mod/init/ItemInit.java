@@ -8,6 +8,8 @@ import MurkyConspiracy.mod.objects.items.seeds.ItemBroccoliSeeds;
 import MurkyConspiracy.mod.objects.items.seeds.ItemCauliflowerSeeds;
 import MurkyConspiracy.mod.objects.items.seeds.ItemCoffeeCherry;
 import MurkyConspiracy.mod.objects.items.seeds.ItemGarlicBulb;
+import MurkyConspiracy.mod.objects.items.seeds.ItemRhubarbSeeds;
+import MurkyConspiracy.mod.objects.items.seeds.ItemStrawberry;
 import MurkyConspiracy.mod.objects.items.seeds.ItemTomatoSeeds;
 import MurkyConspiracy.mod.objects.items.ItemBase;
 import MurkyConspiracy.mod.objects.items.complex.NuggetIngotBlock;
@@ -28,6 +30,7 @@ public class ItemInit
 	public static final Item TOMATO = new ItemCustomFood("tomato", 2, 1);
 	public static final Item BROCCOLI = new ItemCustomFood("broccoli", 2, 4);
 	public static final Item CAULIFLOWER = new ItemCustomFood("cauliflower", 4, 2);
+	public static final Item RHUBARB = new ItemCustomFood("rhubarb", 2, 2);
 	
 	//Seeds
 	public static final Item COFFEE_CHERRY = new ItemCoffeeCherry("coffee_cherry", 1, 0);
@@ -35,8 +38,8 @@ public class ItemInit
 	public static final Item BROCCOLI_SEEDS = new ItemBroccoliSeeds("broccoli_seeds", Blocks.FARMLAND);
 	public static final Item CAULIFLOWER_SEEDS = new ItemCauliflowerSeeds("cauliflower_seeds", Blocks.FARMLAND);
 	public static final Item GARLIC_BULB = new ItemGarlicBulb("garlic_bulb", 1, 0);
-	//public static final Item RHUBARB_SEEDS = new ItemRhubarbSeeds("rhubarb_seeds", 1, 0);
-	//public static final Item STRAWBERRY_SEEDS = new ItemStrawberrySeeds("Strawberry_seeds", 1, 0);
+	public static final Item RHUBARB_SEEDS = new ItemRhubarbSeeds("rhubarb_seeds", Blocks.FARMLAND);
+	public static final Item STRAWBERRY = new ItemStrawberry("strawberry", 1, 0);
 	
 	
 }

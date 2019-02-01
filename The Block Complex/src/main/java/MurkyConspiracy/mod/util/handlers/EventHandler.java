@@ -1,6 +1,10 @@
 package MurkyConspiracy.mod.util.handlers;
 
 import java.util.Random;
+
+import org.apache.commons.lang3.ArrayUtils;
+
+import MurkyConspiracy.mod.init.BlockInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBeetroot;
 import net.minecraft.block.BlockCarrot;
@@ -11,18 +15,31 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumHand;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
+import net.minecraftforge.event.world.BlockEvent.CropGrowEvent;
+import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
 public class EventHandler 
 {
-	Random rand = new Random();
+	private Random rand = new Random();
+	
 	@SubscribeEvent
-	public void yourPlayerHarvestEvent(RightClickBlock event)
+	public void playerHarvestEvent(RightClickBlock event)
 	{
+		
 		if (!event.getWorld().isRemote && event.getHand() == EnumHand.MAIN_HAND) 
 		{
+			if(SeasonHandler.getSeasonalCrops(0).contains(getBlock(event)) || SeasonHandler.getSeasonalCrops(1).contains(getBlock(event)) || SeasonHandler.getSeasonalCrops(2).contains(getBlock(event)) || SeasonHandler.getSeasonalCrops(3).contains(getBlock(event)))
+			{
+				if(!SeasonHandler.getSeasonalCrops(SeasonHandler.getSeason()).contains(getBlock(event)))
+				{
+					event.getWorld().setBlockState(event.getPos(), BlockInit.DEAD_PLANT.getDefaultState());
+					event.setCanceled(true);
+				}	
+			}
+			
 			if(getBlock(event) == Blocks.WHEAT)
 			{
 				BlockCrops wheat = (BlockCrops) getBlock(event);
@@ -77,9 +94,26 @@ public class EventHandler
 		
 	}
 	
+	@SubscribeEvent
+	public void onCropGrow(CropGrowEvent event)
+	{
+		if(!SeasonHandler.getSeasonalCrops(SeasonHandler.getSeason()).contains(event.getState().getBlock()))
+		{
+			event.getWorld().setBlockState(event.getPos(), BlockInit.DEAD_PLANT.getDefaultState());
+		}		
+	}
+	
 	private Block getBlock(RightClickBlock event)
 	{
 		return event.getWorld().getBlockState(event.getPos()).getBlock();
 	}
 	
+	@SubscribeEvent
+	public void onWorldLoad(WorldEvent.Load event)
+	{
+		SeasonHandler.setMyWorld(event.getWorld());
+	}
+	
 }
+
+

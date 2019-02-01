@@ -1,11 +1,16 @@
 package MurkyConspiracy.mod;
 
+import java.io.File;
+
+import org.apache.logging.log4j.Logger;
+
 import MurkyConspiracy.mod.proxy.CommonProxy;
 import MurkyConspiracy.mod.tabs.TheBlockComplexNatureTab;
 import MurkyConspiracy.mod.tabs.TheBlockComplexWorldTab;
 import MurkyConspiracy.mod.util.References;
 import MurkyConspiracy.mod.util.handlers.CraftingHandler;
 import MurkyConspiracy.mod.util.handlers.RegistryHandler;
+import MurkyConspiracy.mod.util.handlers.SeasonHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -21,6 +26,8 @@ public class Main
 	
 	public static final CreativeTabs theblockcomplexworldtab = new TheBlockComplexWorldTab("theblockcomplexworldtab");
 	public static final CreativeTabs  theblockcomplexnaturetab = new TheBlockComplexNatureTab("theblockcomplexnaturetab");
+	public static Logger logger;
+	public static File config;
 	
 	@Instance
 	public static Main Instance;
@@ -29,12 +36,16 @@ public class Main
 	public static CommonProxy proxy;
 	
 	@EventHandler
-	public static void preInit(FMLPreInitializationEvent event) {RegistryHandler.otherRegistries();}
+	public static void preInit(FMLPreInitializationEvent event) 
+	{
+		RegistryHandler.preInitRegistries(event); 
+		logger = event.getModLog();
+	}
 	
 	@EventHandler
 	public static void init(FMLInitializationEvent event) {CraftingHandler.handleRecipes();}
 	
 	@EventHandler
-	public static void postInit(FMLPostInitializationEvent event) {}
+	public static void postInit(FMLPostInitializationEvent event) {SeasonHandler.postInit();}
 	
 }
